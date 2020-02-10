@@ -1,0 +1,1351 @@
+
+
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/bootstrap.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/light-theme.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/theme-colors.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/general.1563794936.css" /><link rel="stylesheet" type="text/css" href="css/bootstrap-daterangepicker.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/datepicker.min.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/jquery.jgrowl.min.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/toastr/toastr.1506166660.css" /><script type="text/javascript" src="js/jquery.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.mobile.custom.min.1506166660.js"></script><script type="text/javascript" src="js/jquery-migrate.min.1506166660.js"></script><script type="text/javascript" src="js/jquery-ui.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.ui.touch-punch.min.1506166660.js"></script><script type="text/javascript" src="js/bootstrap.1506166660.js"></script><script type="text/javascript" src="js/modernizr.min.1506166660.js"></script><script type="text/javascript" src="js/moment.min.1506166660.js"></script><script type="text/javascript" src="js/wysihtml5.min.1506166660.js"></script><script type="text/javascript" src="js/bootstrap-wysihtml5.1506166660.js"></script><script type="text/javascript" src="js/theme.1506166660.js"></script><script type="text/javascript" src="js/excanvas.1506166660.js"></script><script type="text/javascript" src="js/flot.min.1506166660.js"></script><script type="text/javascript" src="js/flot.resize.1506166660.js"></script><script type="text/javascript" src="js/jquery.dataTables.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.dataTables.columnFilter.1506166660.js"></script><script type="text/javascript" src="js/dataTables.overrides.1506166660.js"></script><script type="text/javascript" src="js/bootstrap-daterangepicker.1506166660.js"></script><script type="text/javascript" src="js/jquery.jgrowl.min.1506166660.js"></script><script type="text/javascript" src="js/html5.1506166660.js"></script><script type="text/javascript" src="js/respond.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.validate.min.1506166660.js"></script><script type="text/javascript" src="js/bootstrap-datepicker.1506166660.js"></script><script type="text/javascript" src="js/general.1506166660.js"></script><script type="text/javascript" src="js/toastr/toastr.1506166660.js"></script><html>
+  <head>
+    <title>Hisabing - Professional Quotations the easy way</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content='text/html;charset=utf-8' http-equiv='content-type'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href='img/meta_icons/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
+    <link href='img/meta_icons/apple-touch-icon-57x57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='img/meta_icons/apple-touch-icon-72x72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='img/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='img/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'> 
+    <style type="text/css">
+      .datepicker{
+        z-index: 2000 !important;
+      }
+      #setting_link{
+        text-decoration: none;
+        font-weight: 500;
+      }
+      #setting_link:hover{
+          text-decoration: underline;
+      }
+    </style> 
+       <!-- <link rel="stylesheet" type="text/css" href="" /> 
+      <link rel="stylesheet" type="text/css" href="" /> -->
+         
+       <script>
+                   (function() {
+              $(document).ready(function() {
+                if (localStorage.getItem("content") !== null) {
+                  $("#color-settings-body-color").attr("href", localStorage.getItem("content"));
+                }
+                if ((localStorage.getItem("contrast") !== null) && !$("body").hasClass("contrast-background")) {
+                  $("body")[0].className = $("body")[0].className.replace(/(^|\s)contrast.*?(\s|$)/g, " ").replace(/\s\s+/g, " ").replace(/(^\s|\s$)/g, "");
+                  $("body").addClass(localStorage.getItem("contrast"));
+                }
+                $(".color-settings-body-color > a").hover(function() {
+                  $("#color-settings-body-color").attr("href", $(this).data("change-to"));
+                  return localStorage.setItem("content", $(this).data("change-to"));
+                });
+                return $(".color-settings-contrast-color > a").hover(function() {
+                  $('body')[0].className = $('body')[0].className.replace(/(^|\s)contrast.*?(\s|$)/g, ' ').replace(/\s\s+/g, ' ').replace(/(^\s|\s$)/g, '');
+                  $('body').addClass($(this).data("change-to"));
+                  return localStorage.setItem("contrast", $(this).data("change-to"));
+                });
+              });
+
+            }).call(this);
+
+       </script>
+        <!-- / END - page related files and scripts [optional] -->
+  </head>
+  <body class='contrast-blue'>
+    <header>
+      <nav class='navbar navbar-default col-lg-12 col-md-12 col-sm-12 col-xs-12 '>
+        <div classs="col-lg-6 col-md-4 col-sm-2 col-xs-12">
+          <div class="align-logo">
+            <a class='navbar-brand' href='dashboards.html'>
+              <img width="40" height="20" class="logo" alt="Hisabing" src="img/favicon.png" />
+
+              <img class="app-name" alt="Hisabing" src="img/favicon.png" />
+            
+             <!--  <img width="21" height="21" class="logo-xs" alt="Flatty" src="img/logo_xs.svg" /> -->
+            </a>
+              <a class='toggle-nav btn pull-left hidden-lg hidden-md hidden-sm' href='#'>
+              <i class='icon-reorder'></i>
+            </a> 
+          </div> 
+      </div>
+        
+        <ul class='nav col-lg-7 col-md-7 col-sm-9 col-xs-12'>   
+         
+                               <li class="hide">
+                            <a type='button' href="companyInfos/account.html" class='dark blue-background'><i class='icon-tasks'></i> Upgrade</a>
+                        </li>
+           
+
+
+          <li class='dropdown dark user-menu pull-right' style="margin-left: 5px">
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>        
+             
+
+              <span class='user-name'>ik user</span>
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='users/update_pwd/1696.html'>
+                  <i class='icon-user'></i>
+                  Profile
+                </a>
+              </li> 
+              <li>
+                <a href='companyInfos/account.html'>
+                  <i class='icon-tasks'></i>
+                  Account
+                </a>
+              </li>            
+              <li class='divider'></li>
+              <li>
+                <a  onmousedown="window.localStorage.removeItem('hs_gst_skip');" href='/users/logout'>
+                  <i class='icon-signout'></i>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class='pull-right dropdown medium only-icon widget notification_block show'>
+            <a class='dropdown-toggle notification_menu' data-toggle='dropdown' href='#'>
+              <i class='icon-rss'></i>
+              <div class="label notification_count"></div>
+            </a>
+            <ul class='dropdown-menu' id='list' style="height: 300px;  overflow-y: scroll; width: 290px;">
+              <li class="no_res" style="margin-top:20px; text-align: center;">No Notifications to show</li>
+            </ul>
+          </li>
+
+           <li class='pull-right'>
+             <a id="setting_link" href="companyInfos/add.html" class="show pull-right customer_outstand_invoice nav user-menu dark blue-background">Settings</a>
+          </li>
+
+           <li class='pull-right'>
+             <a id="setting_link" href="users/manage.html" class="show pull-right customer_outstand_invoice nav user-menu dark blue-background">User</a>
+          </li>
+
+          <li class='pull-right'>
+             <a id="setting_link" href="dashboards.html" class="show pull-right customer_outstand_invoice nav user-menu dark blue-background">Dashboard</a>
+          </li>
+
+        </ul>
+       
+
+        <!-- <form action='search_results.html' class='navbar-form navbar-right hidden-xs' method='get'>
+          <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          <div class='form-group'>
+            <input value="" class="form-control" placeholder="Search..." autocomplete="off" id="q_header" name="q" type="text" />
+          </div>
+        </form> -->
+      </nav>
+
+    </header>
+    <div id='wrapper'>
+      <div id='main-nav-bg main-nav-closed'></div>
+      <nav id='main-nav'>
+              <div class='navigation hide'>
+          <ul class='nav nav-stacked'>
+            <li class='click-nav     '>
+                      <a class="dropdown-collapse" href="#"><i class='icon-edit'></i>
+              <span>Quotes</span>
+              <i class='icon-angle-right angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked sub-menu' >
+
+                <!---->
+              <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>GST Quotes</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='QuoteGsts/add.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='QuoteGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                    </li>
+                    <li class=''>
+                      <a href='drafts/quoteGsts.html'>
+                        <i class='icon-caret-right'></i>
+                        <span>Drafts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              
+                <!---->
+                <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>Pre GST Quotes</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+                <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='quotes/add.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Create</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='quotes/index.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>View</span>
+                  </a>
+                </li>
+                 <li class=''>
+                  <a href='drafts/quotes.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Drafts</span>
+                  </a>
+                </li>
+               </ul>
+                </li>
+               
+              </ul>
+            </li>
+             
+               <li class='click-nav      '>
+              <a class='dropdown-collapse main' href="#"><i class='icon-money'></i>
+                <span>Sales</span>
+                <i class='icon-angle-right angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked sub-menu'>
+
+              <!---->
+              <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>GST Invoices</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='InvoiceGsts/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='InvoiceGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='drafts/invoiceGsts.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <!---->
+
+              <!--Proforma GST is created in 14/july/2017-->
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>GST Proforma</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='ProformaGsts/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='ProformaGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='drafts/proformaGsts.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!---->
+
+                <li class='  '>
+                <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Pre GST Invoices</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='invoices/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='invoices/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                   <li class=''>
+                    <a href='drafts/invoice.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+
+              
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Pre GST Proforma</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='proformas/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='proformas/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                   <li class=''>
+                    <a href='drafts/proforma.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+********************************************************************************************************************************************************************
+
+                <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Estimates</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/estimates/create'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/estimates/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              </ul>
+            </li>
+
+            <li class='click-nav     '>
+                      <a class="dropdown-collapse" href="#"><i class='icon-question'></i>
+              <span>Inquiry</span>
+              <i class='icon-angle-right angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked sub-menu'>
+                <li class=''>
+                  <a href='/inquiries/create'>
+                    <i class='icon-caret-right'></i>
+                    <span>Create</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='/inquiries/index'>
+                    <i class='icon-caret-right'></i>
+                    <span>View</span>
+                  </a>
+              </ul>
+            </li>
+
+
+             <li class='click-nav     
+               '>
+              <a class='dropdown-collapse' href="#"><i class='icon-list'></i>
+                <span>Purchase</span>
+                <i class='icon-angle-right angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked sub-menu'>
+                <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Order</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/purchase_orders/add'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/purchase_orders/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              <!--PurchaseGST-->
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>GST Purchase Entry</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/PurchaseGsts/add'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/PurchaseGsts/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              <!---->
+                 <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Entry</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/Purchases/add'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/Purchases/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+
+
+              </ul>
+            </li>
+
+             <li class='click-nav   '>
+                      <a class="dropdown-collapse" href="#"><i class='icon-inventory'></i>
+              <span>Inventory</span>
+              <i class='icon-angle-right angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked sub-menu'>
+                <li class=''>
+                  <a href='/products/'>
+                    <i class='icon-caret-right'></i>
+                    <span>Products</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='/products/gen_barcode/'>
+                    <i class='icon-caret-right'></i>
+                    <span>Barcode</span>
+                  </a>
+              </ul>
+            </li>
+********************************************************************************************************************************************************************
+
+            <li class='click-nav'>
+              <a class='dropdown-collapse' href="#"><i class='icon-group'></i>
+                <span>People</span>
+                <i class='icon-angle-right angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked sub-menu'>
+                <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Customers</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='customers/add.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='customers.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+*******************************************************************************************************************************************************************
+
+	        <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Vendors</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/vendors/add'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+
+                  <li class=''>
+                    <a href='/vendors/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              </ul>
+            </li>
+********************************************************************************************************************************************************************
+
+             <li class=' expense_menu '>
+                      <a class="" href="expenses.html"><i class='icon-expense_menu'></i>
+              <span>Expenses</span>
+              </a>
+            </li>
+          
+          </ul>
+        </div>
+
+        <div class='navigation show'>
+          <ul class='nav nav-stacked'>
+             <li class=''>
+              <a href='dashboards.html'>
+                <i class='icon-dashboard'></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class='click-nav   '>
+                      <a class="dropdown-collapse" href="#"><i class='icon-edit'></i>
+              <span>Quotes</span>
+              <i class='icon-angle-right angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked sub-menu'>
+
+                <!---->
+              <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>GST Quotes</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='QuoteGsts/add.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='QuoteGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                    </li>
+                    <li class=''>
+                      <a href='drafts/quoteGsts.html'>
+                        <i class='icon-caret-right'></i>
+                        <span>Drafts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              
+                <!---->
+                <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>Pre GST Quotes</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+                <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='quotes/add.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Create</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='quotes/index.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>View</span>
+                  </a>
+                </li>
+                 <li class=''>
+                  <a href='drafts/quotes.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Drafts</span>
+                  </a>
+                </li>
+               </ul>
+                </li>
+               
+              </ul>
+            </li>
+             
+                <li class='click-nav    '>
+              <a class='dropdown-collapse main' href="#"><i class='icon-money'></i>
+                <span>Sales</span>
+                <i class='icon-angle-right angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked sub-menu'>
+                <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>GST Invoices</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='InvoiceGsts/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='InvoiceGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='drafts/invoiceGsts.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <!---->
+
+              <!--Proforma GST is created in 14/july/2017-->
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>GST Proforma</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='ProformaGsts/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='ProformaGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='drafts/proformaGsts.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!---->
+
+                <li class='  '>
+                <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Pre GST Invoices</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='invoices/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='invoices/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                   <li class=''>
+                    <a href='drafts/invoice.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Pre Proforma</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='proformas/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='proformas/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                   <li class=''>
+                    <a href='drafts/proforma.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              </ul>
+            </li>
+
+             <li class='active'>
+                      <a href="customers.html"><i class='icon-group'></i>
+              <span>Customers</span>
+              </a>     
+              
+            </li>
+
+             <li class=' expense_menu'>
+                      <a class="" href="expenses.html"><i class='icon-expense_menu'></i>
+              <span>Expenses</span>
+              </a>
+            </li>
+          
+            <li class=''>
+                      <a href="companyInfos/add.html"><i class='icon-cog'></i>
+              <span>Settings</span>
+              </a>     
+              
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section id='content'>
+        <div class='container'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12' id='content-wrapper'>
+            
+              
+             <!--  <div class='page-header page-header-with-buttons'>
+                <h1 class='pull-left'>
+                  <i class='icon-dashboard'></i>
+                  <span>Dashboard</span>
+                </h1>
+               
+              </div> -->
+             
+                    
+<div class='page-header-customer page-header-with-buttons '>
+                <h1 class='pull-left'>
+                  <i class='icon-group'></i>
+                  Customers  <small> </small>  <a type='button' href="customers/add.html" class='btn  btn-primary'>Add Customer</a>
+                </h1>                 
+    <div class='col-lg-2 col-md-3 col-sm-4 col-xs-6 pull-right'>
+	    <div class='input-group'>
+	         <input placeholder="search" class='form-control' id='customer-input' type='text' autofocus>
+	             <span class='input-group-btn'>
+	                 <button class='btn' type='button'>
+	                    <i class='icon-search'></i>
+	               </button>
+	        </span>
+	    </div>
+	</div>
+
+ </div> 
+ <div class=' col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+<ul class="ul_wrap_rows" id="cutomer-list">
+	  <div class="clear"></div>
+</ul></div>	
+		
+
+<div class="clear"></div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.delete_customer').on('click', function(){
+        var curr_ele = $(this).parent().parent();
+
+        var id = $(this).parent().parent().find('.cust_id').html();
+        var cust_name = $(this).parent().parent().find('.cust-name').html();
+        var status = confirm('Are you sure, do you want to delete this customer'+cust_name);
+        if(status == true){
+             $.ajax({
+                type: "post",
+                url: "/customers/delete_contact_customer",
+                data: {id : id},
+                //timeout: 10000,
+                success: function(res){  
+                   if(res == 'true'){
+                    var $toast = toastr['success']('has been deleted', 'Customer');
+                    $(curr_ele).fadeOut();
+                    //$(curr_ele).addClass('hide');
+                   }else{
+                        var $toast = toastr['warning']('is not deleted', 'Customer');
+                   }
+                },
+                error: function(data){
+                
+                }
+            });
+        }
+    });
+    $("#customer-input").keyup(function(){
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val(), count = 0;
+ 
+        // Loop through the comment list
+        $("#cutomer-list li").each(function(){
+ 			//console.log('tre');
+ 
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+ 
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+ 
+        // Update the count
+        var numberItems = count;
+        $("#filter-count").text("Number of Comments = "+count);
+    });
+});
+</script>
+<style type="text/css">
+#amt_hover_link span {                                 
+    display:none;
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+#amt_hover_link:hover span {                           
+    display:block;
+    height:32px;
+    width:100%;
+    /*background:#000;*/
+    box-shadow: 0 0 4px #888888;
+    position: relative;
+    padding: 8px;
+   /* top: 19px;
+    left:12px;*/
+    z-index:1000;
+}
+</style>
+
+
+	
+	
+               
+            </div>
+
+          <!-- Footer starts -->
+      <footer>
+      <!-- <script>
+(function() {
+var interakt = document.createElement('script');
+interakt.type = 'text/javascript'; interakt.async = true;
+interakt.src = "//cdn.interakt.co/interakt/c2ffe18a97189b2c0bc69bfa8826b6a4.js";
+var scrpt = document.getElementsByTagName('script')[0];
+scrpt.parentNode.insertBefore(interakt, scrpt);
+})()
+</script> -->
+<script>
+window.mySettings = {
+// TODO: The current logged in user's email address.
+email: "ikimran1628@gmail.com",
+// TODO: The current logged in user's sign-up date in Unix epoch time.
+created_at: "1569868200",
+app_id: 'c2ffe18a97189b2c0bc69bfa8826b6a4'
+};
+</script>
+         <div class="container">
+         
+            <div class="text-center">
+              <hr>
+
+              <p class='col-lg-12 col-md-12 col-sm-12 col-xs-12 foot-menu'><a href="http://support.hisabing.com/" target="_blank">Get help</a> | <a href='#demo_request_Modal'  data-toggle='modal' id='demo_modal'>Request demo</a></p>
+              <p>Help-line: 9884452536 </p>
+             <p class="copy">Crafted By <a href="http://siamcomputing.com">Siam Computing</a></p>
+            </div>
+            
+         </div>
+      </footer>
+      <!-- Footer ends -->
+      <!--     <footer id='footer'>
+            <div class='footer-wrapper'>
+              <div class='row'>
+                <div class='col-sm-6 text'>
+                  Copyright © 2013 Your Project Name
+                </div>
+                <div class='col-sm-6 buttons'>
+                  <a class="btn btn-link" href="http://www.bublinastudio.com/flatty">Preview</a>
+                  <a class="btn btn-link" href="https://wrapbootstrap.com/theme/flatty-flat-administration-template-WB0P6NR1N">Purchase</a>
+                </div>
+              </div>
+            </div>
+          </footer> -->
+        </div>
+      </section>
+    </div>
+  
+    <script type="text/javascript">
+          $(window).on('load',function(){
+        var pathname = window.location.pathname;
+        var hs_gst_skip = false;
+        var menus = ['dashboards.html','InvoiceGsts/create.html','QuoteGsts/add.html'];
+        if(menus.indexOf(pathname)>-1){
+          if(pathname != 'dashboards.html'){
+            $('#gst_alert').modal({
+                backdrop: 'static',
+                keyboard: false
+            })
+          }
+          console.log(localStorage['hs_gst_skip']);
+          if(localStorage['hs_gst_skip'])
+               hs_gst_skip = true;
+
+          if(pathname != 'dashboards.html' || (pathname == 'dashboards.html' && !hs_gst_skip)){
+            $('#gst_alert').modal('show');
+          }
+        }
+      });
+      function modal_skip(){
+        var pathname = window.location.pathname;
+        localStorage.setItem('hs_gst_skip',true);
+        if(pathname =='dashboards.html'){
+          $('#gst_alert').modal('hide');
+        }else{
+          window.location.href='dashboards.html';
+        }
+        
+      } 
+    </script>
+
+<div class="modal fade" id="gst_alert">
+  
+   <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+        <button type="button" class="close hide" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class='modal-title text-center' id='myModalLabel'>GST is here!</h4>                           
+          </div>        
+       <div class='modal-body container'>
+     
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-bott">
+
+                <p class="link-txt text-center">Please Configure Your GST details to start accessing the GST modules</p>
+
+              </div>
+                
+
+
+              </div>                 
+                  
+  <div class="modal-footer">
+          <input class="esc_nav btn btn-danger" type="button" onclick="modal_skip()" data-dismiss="modal" aria-hidden="true" value="Skip">
+          <input class="esc_nav btn btn-success" type="button" onclick="window.location.href='companyInfos/add/#gst_tab.html'" value="Update" id="">
+          <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4" id="spinner" style="display:none">
+              <h2 class=""> <i class="icon-spinner icon-spin"> </i> Please wait ...</h2>
+              </div>
+                     
+  </div>
+    </div>
+  </div>
+
+</div>
+<div id="demo_request_Modal" class="modal fade" tabindex="-1" >
+   <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class='modal-title' id='myModalLabel'>Request demo</h4>                           
+          </div>        
+       <div class='modal-body container'>
+     
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-bott">
+
+                <p>Hi,</p> 
+
+                <p>Hisabing has a lot of useful features that can help your business get more efficient. We would be glad to give you a walk through and show everything that Hisabing can do. </p>
+
+                <p>Please fill in the form below and we will get in touch soon!</p>
+
+              </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-top">
+                  <div class="col-lg-10 col-lg-offset-12 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                  <label class="mar-bott">Enter your Email id :</label>
+                  <input class="mar-bott col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" value="ikimran1628@gmail.com" placeholder="Email" id="demo_mail_id"/></div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter your Phone :</label><input class="mar-bott col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" value="7848883232" placeholder="Phone" id="demo_phone_id"/></div>
+                  <div class="clearfix"></div>
+                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter the demo date :</label><br>
+                  <input type="text" data-date-format="dd-mm-yyyy"  class="datepicker" placeholder="Date" id="demo_date" value="04-10-2019">
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter the demo time :</label><br>
+                   <select class="selectpicker" id="demo_time">
+                    <optgroup label="Pick a time">
+                      <option>10 am</option>
+                      <option>11 am</option>
+                      <option>12 pm</option>
+                      <option>01 pm</option>
+                      <option>02 pm</option>
+                      <option>03 pm</option>
+                      <option>04 pm</option>
+                      <option>05 pm</option>
+                    </optgroup>
+                  </select>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                </div>
+
+
+              </div>                 
+                  
+  <div class="modal-footer">
+          <div id="validate-email" style="display:none">
+              <p style="color:orange; text-align: center;">Enter a valid Email address</p>
+          </div>
+           <div id="required-email" style="display:none">
+              <p style="color:red; text-align: center;">Enter an Email address</p>
+          </div>
+          <div id="required-date" style="display:none">
+              <p style="color:red; text-align: center;">Enter Demo Date</p>
+          </div>
+          <input class="btn btn-success" type="submit" value="Send" id="demo_send">
+          <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4" id="spinner" style="display:none">
+              <h2 class=""> <i class="icon-spinner icon-spin"> </i> Please wait ...</h2>
+              </div>
+                     
+  </div>
+    </div>
+  </div>
+</div>
+<div id="demo_request_Modal" class="modal fade" tabindex="-1" >
+   <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class='modal-title' id='myModalLabel'>Request demo</h4>                           
+          </div>        
+       <div class='modal-body container'>
+     
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-bott">
+
+                <p>Hi,</p> 
+
+                <p>Hisabing has a lot of useful features that can help your business get more efficient. We would be glad to give you a walk through and show everything that Hisabing can do. </p>
+
+                <p>Please fill in the form below and we will get in touch soon!</p>
+
+              </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-top">
+                  <div class="col-lg-10 col-lg-offset-12 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                  <label class="mar-bott">Enter your Email id :</label>
+                  <input class="mar-bott col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" value="ikimran1628@gmail.com" placeholder="Email" id="demo_mail_id"/></div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter your Phone :</label><input class="mar-bott col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" value="7848883232" placeholder="Phone" id="demo_phone_id"/></div>
+                  <div class="clearfix"></div>
+                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter the demo date :</label><br>
+                  <input type="text" data-date-format="dd-mm-yyyy"  class="datepicker" placeholder="Date" id="demo_date" value="04-10-2019">
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter the demo time :</label><br>
+                   <select class="selectpicker" id="demo_time">
+                    <optgroup label="Pick a time">
+                      <option>10 am</option>
+                      <option>11 am</option>
+                      <option>12 pm</option>
+                      <option>01 pm</option>
+                      <option>02 pm</option>
+                      <option>03 pm</option>
+                      <option>04 pm</option>
+                      <option>05 pm</option>
+                    </optgroup>
+                  </select>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                </div>
+
+
+              </div>                 
+                  
+  <div class="modal-footer">
+          <div id="validate-email" style="display:none">
+              <p style="color:orange; text-align: center;">Enter a valid Email address</p>
+          </div>
+           <div id="required-email" style="display:none">
+              <p style="color:red; text-align: center;">Enter an Email address</p>
+          </div>
+          <div id="required-date" style="display:none">
+              <p style="color:red; text-align: center;">Enter Demo Date</p>
+          </div>
+          <input class="btn btn-success" type="submit" value="Send" id="demo_send">
+          <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4" id="spinner" style="display:none">
+              <h2 class=""> <i class="icon-spinner icon-spin"> </i> Please wait ...</h2>
+              </div>
+                     
+  </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");r.type="text/javascript";
+  r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.4.0-min.gz.js";
+  r.onload=function(){e.amplitude.runQueuedFunctions()};var i=t.getElementsByTagName("script")[0];
+  i.parentNode.insertBefore(r,i);function s(e,t){e.prototype[t]=function(){this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+  return this}}var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset"];
+  for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[];return this;
+  };var p=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];
+  for(var l=0;l<p.length;l++){s(c,p[l])}n.Revenue=c;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups"];
+  function v(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+  }}for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){e=(!e||e.length===0?"$default_instance":e).toLowerCase();
+  if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]};e.amplitude=n;
+  })(window,document);
+
+  amplitude.getInstance().init("24c247604a4d79e236ab635a0d3785f6");
+</script><script type="text/javascript">
+ $(document).ready(function(){
+     toastr.options = {
+                closeButton: true,
+                positionClass: 'toast-top-right',
+                onclick: null
+            };
+      $('.pro_services').on('click',function(eve){
+        eve.preventDefault();
+        console.log('asfd');
+          toastr.clear($toast);
+          var $toast = toastr['error']('<a href="companyInfos/account.html" target="_blank"><div> That feature is part of Hisabing Plus. Click this box to see other features that you get in our plus account.</div></a>', 'Sorry');
+      });
+  });
+
+function isEmpty(d){
+
+    for (var k in d) 
+      return false;
+
+     return true
+   }
+  $(document).ready(function(){
+    $.ajax({
+      type: "POST",
+      url: "/app/notification_count",
+      
+
+     success: function(data){  
+        if(data != 0){
+          $('.notification_count').not('.inner_count').html(data); 
+        } 
+        
+      },
+      error: function(data){   
+           $('#info_box').html('<p>Error!..</p>');
+      }
+  });
+  $('.datepicker').datepicker({
+    autoclose: true
+  });
+   $('.notification_menu').on('click', function(){
+        var pathArray = window.location.pathname.split( '/' );
+
+        if(pathArray[1] != 'dashboards'){
+          $.ajax({
+                type: "POST",
+                url: "/app/notification_fetch_all",
+                
+         
+               success: function(data){   
+                
+               var resp=JSON.parse(data);
+               if(!isEmpty(resp)){
+                   $('#list li').remove();
+                  $.each( resp, function( key, value ) {
+                    
+                    $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-user text-success"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                  });
+               }
+                 
+                  //$('.notification_menu').removeClass('show_all');
+                },
+                error: function(data){   
+                     $('#info_box').html('<p>Error!..</p>');
+                }
+            });
+        }else{
+          $.ajax({
+                type: "POST",
+                url: "/app/notification_fetch",
+                
+         
+               success: function(data){   
+                
+               var resp=JSON.parse(data);
+               if(!isEmpty(resp)){
+                $('#list li').remove();
+                  $.each( resp, function( key, value ) {
+                    if(value.Notification.type == 'alert'){
+                       $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-lightbulb text-red"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                    }else if(value.Notification.type == 'activity'){
+                      $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-comments-alt  text-success"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                    }
+                    
+                  });
+                  if(resp.length > 4){
+                    $('#list').append('<li class="widget-footer" id="all_notification" onClick="all_notification()"><a href="#">All notifications</a></li>');
+                  }
+                  
+               }
+                  
+                  //$('.notification_menu').removeClass('show_all');
+                },
+                error: function(data){   
+                     $('#info_box').html('<p>Error!..</p>');
+                }
+            });
+            
+        }
+
+        $.ajax({
+                type: "POST",
+                url: "/app/notification_notice_update",
+                
+         
+               success: function(data){   
+                  if(data == 0){
+                   $('.notification_count').not('.inner_count').html('');
+                  }
+                },
+                error: function(data){   
+                     $('#info_box').html('<p>Error!..</p>');
+                }
+            });
+        
+    });
+});
+function all_notification(){
+
+            $('.notification_block').addClass('show_all');
+              $('#list li').remove();
+              $('#all_notification').remove();
+              $('#list').append('<img src="/img/ajax-loaders/17.gif" style="margin: 126px">');
+               $.ajax({
+                  type: "POST",
+                  url: "/app/notification_fetch_all",
+                  
+           
+                 success: function(data){   
+                  
+                 var resp=JSON.parse(data);
+                    $.each( resp, function( key, value ) {
+                      $('#list img').remove();
+                       if(value.Notification.type == 'alert'){
+                         $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-lightbulb text-red"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                      }else if(value.Notification.type == 'activity'){
+                        $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-comments-alt  text-success"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                      }
+                    });
+                    $('.notification_block').removeClass('show_all');
+                  },
+                  error: function(data){   
+                       $('#info_box').html('<p>Error!..</p>');
+                  }
+              });
+          }
+
+</script>
+
+  </body>
+</html>

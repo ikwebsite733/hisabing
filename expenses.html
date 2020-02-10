@@ -1,0 +1,1647 @@
+
+
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/bootstrap.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/light-theme.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/theme-colors.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/general.1563794936.css" /><link rel="stylesheet" type="text/css" href="css/bootstrap-daterangepicker.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/datepicker.min.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/jquery.jgrowl.min.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/toastr/toastr.1506166660.css" /><script type="text/javascript" src="js/jquery.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.mobile.custom.min.1506166660.js"></script><script type="text/javascript" src="js/jquery-migrate.min.1506166660.js"></script><script type="text/javascript" src="js/jquery-ui.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.ui.touch-punch.min.1506166660.js"></script><script type="text/javascript" src="js/bootstrap.1506166660.js"></script><script type="text/javascript" src="js/modernizr.min.1506166660.js"></script><script type="text/javascript" src="js/moment.min.1506166660.js"></script><script type="text/javascript" src="js/wysihtml5.min.1506166660.js"></script><script type="text/javascript" src="js/bootstrap-wysihtml5.1506166660.js"></script><script type="text/javascript" src="js/theme.1506166660.js"></script><script type="text/javascript" src="js/excanvas.1506166660.js"></script><script type="text/javascript" src="js/flot.min.1506166660.js"></script><script type="text/javascript" src="js/flot.resize.1506166660.js"></script><script type="text/javascript" src="js/jquery.dataTables.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.dataTables.columnFilter.1506166660.js"></script><script type="text/javascript" src="js/dataTables.overrides.1506166660.js"></script><script type="text/javascript" src="js/bootstrap-daterangepicker.1506166660.js"></script><script type="text/javascript" src="js/jquery.jgrowl.min.1506166660.js"></script><script type="text/javascript" src="js/html5.1506166660.js"></script><script type="text/javascript" src="js/respond.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.validate.min.1506166660.js"></script><script type="text/javascript" src="js/bootstrap-datepicker.1506166660.js"></script><script type="text/javascript" src="js/general.1506166660.js"></script><script type="text/javascript" src="js/toastr/toastr.1506166660.js"></script><html>
+  <head>
+    <title>Hisabing - Professional Quotations the easy way</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content='text/html;charset=utf-8' http-equiv='content-type'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href='img/meta_icons/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
+    <link href='img/meta_icons/apple-touch-icon-57x57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='img/meta_icons/apple-touch-icon-72x72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='img/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='img/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'> 
+    <style type="text/css">
+      .datepicker{
+        z-index: 2000 !important;
+      }
+      #setting_link{
+        text-decoration: none;
+        font-weight: 500;
+      }
+      #setting_link:hover{
+          text-decoration: underline;
+      }
+    </style> 
+       <!-- <link rel="stylesheet" type="text/css" href="" /> 
+      <link rel="stylesheet" type="text/css" href="" /> -->
+         
+       <script>
+                   (function() {
+              $(document).ready(function() {
+                if (localStorage.getItem("content") !== null) {
+                  $("#color-settings-body-color").attr("href", localStorage.getItem("content"));
+                }
+                if ((localStorage.getItem("contrast") !== null) && !$("body").hasClass("contrast-background")) {
+                  $("body")[0].className = $("body")[0].className.replace(/(^|\s)contrast.*?(\s|$)/g, " ").replace(/\s\s+/g, " ").replace(/(^\s|\s$)/g, "");
+                  $("body").addClass(localStorage.getItem("contrast"));
+                }
+                $(".color-settings-body-color > a").hover(function() {
+                  $("#color-settings-body-color").attr("href", $(this).data("change-to"));
+                  return localStorage.setItem("content", $(this).data("change-to"));
+                });
+                return $(".color-settings-contrast-color > a").hover(function() {
+                  $('body')[0].className = $('body')[0].className.replace(/(^|\s)contrast.*?(\s|$)/g, ' ').replace(/\s\s+/g, ' ').replace(/(^\s|\s$)/g, '');
+                  $('body').addClass($(this).data("change-to"));
+                  return localStorage.setItem("contrast", $(this).data("change-to"));
+                });
+              });
+
+            }).call(this);
+
+       </script>
+        <!-- / END - page related files and scripts [optional] -->
+  </head>
+  <body class='contrast-blue'>
+    <header>
+      <nav class='navbar navbar-default col-lg-12 col-md-12 col-sm-12 col-xs-12 '>
+        <div classs="col-lg-6 col-md-4 col-sm-2 col-xs-12">
+          <div class="align-logo">
+            <a class='navbar-brand' href='dashboards.html'>
+              <img width="40" height="20" class="logo" alt="Hisabing" src="img/favicon.png" />
+
+              <img class="app-name" alt="Hisabing" src="img/favicon.png" />
+            
+             <!--  <img width="21" height="21" class="logo-xs" alt="Flatty" src="img/logo_xs.svg" /> -->
+            </a>
+              <a class='toggle-nav btn pull-left hidden-lg hidden-md hidden-sm' href='#'>
+              <i class='icon-reorder'></i>
+            </a> 
+          </div> 
+      </div>
+        
+        <ul class='nav col-lg-7 col-md-7 col-sm-9 col-xs-12'>   
+         
+                               <li class="hide">
+                            <a type='button' href="companyInfos/account.html" class='dark blue-background'><i class='icon-tasks'></i> Upgrade</a>
+                        </li>
+           
+
+
+          <li class='dropdown dark user-menu pull-right' style="margin-left: 5px">
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>        
+             
+
+              <span class='user-name'>ik user</span>
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='users/update_pwd/1696.html'>
+                  <i class='icon-user'></i>
+                  Profile
+                </a>
+              </li> 
+              <li>
+                <a href='companyInfos/account.html'>
+                  <i class='icon-tasks'></i>
+                  Account
+                </a>
+              </li>            
+              <li class='divider'></li>
+              <li>
+                <a  onmousedown="window.localStorage.removeItem('hs_gst_skip');" href='login.html'>
+                  <i class='icon-signout'></i>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class='pull-right dropdown medium only-icon widget notification_block show'>
+            <a class='dropdown-toggle notification_menu' data-toggle='dropdown' href='#'>
+              <i class='icon-rss'></i>
+              <div class="label notification_count"></div>
+            </a>
+            <ul class='dropdown-menu' id='list' style="height: 300px;  overflow-y: scroll; width: 290px;">
+              <li class="no_res" style="margin-top:20px; text-align: center;">No Notifications to show</li>
+            </ul>
+          </li>
+
+           <li class='pull-right'>
+             <a id="setting_link" href="companyInfos/add.html" class="show pull-right customer_outstand_invoice nav user-menu dark blue-background">Settings</a>
+          </li>
+
+           <li class='pull-right'>
+             <a id="setting_link" href="users/manage.html" class="show pull-right customer_outstand_invoice nav user-menu dark blue-background">User</a>
+          </li>
+
+          <li class='pull-right'>
+             <a id="setting_link" href="dashboards.html" class="show pull-right customer_outstand_invoice nav user-menu dark blue-background">Dashboard</a>
+          </li>
+
+        </ul>
+       
+
+        <!-- <form action='search_results.html' class='navbar-form navbar-right hidden-xs' method='get'>
+          <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          <div class='form-group'>
+            <input value="" class="form-control" placeholder="Search..." autocomplete="off" id="q_header" name="q" type="text" />
+          </div>
+        </form> -->
+      </nav>
+
+    </header>
+    <div id='wrapper'>
+      <div id='main-nav-bg main-nav-closed'></div>
+      <nav id='main-nav'>
+              <div class='navigation hide'>
+          <ul class='nav nav-stacked'>
+            <li class='click-nav     '>
+                      <a class="dropdown-collapse" href="#"><i class='icon-edit'></i>
+              <span>Quotes</span>
+              <i class='icon-angle-right angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked sub-menu' >
+
+                <!---->
+              <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>GST Quotes</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='QuoteGsts/add.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='QuoteGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                    </li>
+                    <li class=''>
+                      <a href='drafts/quoteGsts.html'>
+                        <i class='icon-caret-right'></i>
+                        <span>Drafts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              
+                <!---->
+                <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>Pre GST Quotes</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+                <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='quotes/add.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Create</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='quotes/index.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>View</span>
+                  </a>
+                </li>
+                 <li class=''>
+                  <a href='drafts/quotes.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Drafts</span>
+                  </a>
+                </li>
+               </ul>
+                </li>
+               
+              </ul>
+            </li>
+             
+               <li class='click-nav      '>
+              <a class='dropdown-collapse main' href="#"><i class='icon-money'></i>
+                <span>Sales</span>
+                <i class='icon-angle-right angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked sub-menu'>
+
+              <!---->
+              <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>GST Invoices</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='InvoiceGsts/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='InvoiceGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='drafts/invoiceGsts.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <!---->
+
+              <!--Proforma GST is created in 14/july/2017-->
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>GST Proforma</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='ProformaGsts/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='ProformaGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='drafts/proformaGsts.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!---->
+
+                <li class='  '>
+                <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Pre GST Invoices</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='invoices/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='invoices/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                   <li class=''>
+                    <a href='drafts/invoice.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+
+              
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Pre GST Proforma</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='proformas/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='proformas/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                   <li class=''>
+                    <a href='drafts/proforma.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+
+
+
+**************************************************************************************************************
+<li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Estimates</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/estimates/create'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/estimates/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              </ul>
+            </li>
+
+            <li class='click-nav     '>
+                      <a class="dropdown-collapse" href="#"><i class='icon-question'></i>
+              <span>Inquiry</span>
+              <i class='icon-angle-right angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked sub-menu'>
+                <li class=''>
+                  <a href='/inquiries/create'>
+                    <i class='icon-caret-right'></i>
+                    <span>Create</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='/inquiries/index'>
+                    <i class='icon-caret-right'></i>
+                    <span>View</span>
+                  </a>
+              </ul>
+            </li>
+
+
+             <li class='click-nav     
+               '>
+              <a class='dropdown-collapse' href="#"><i class='icon-list'></i>
+                <span>Purchase</span>
+                <i class='icon-angle-right angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked sub-menu'>
+                <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Order</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/purchase_orders/add'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/purchase_orders/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              <!--PurchaseGST-->
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>GST Purchase Entry</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/PurchaseGsts/add'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/PurchaseGsts/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              <!---->
+                 <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Entry</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/Purchases/add'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/Purchases/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+
+
+              </ul>
+            </li>
+
+             <li class='click-nav   '>
+                      <a class="dropdown-collapse" href="#"><i class='icon-inventory'></i>
+              <span>Inventory</span>
+              <i class='icon-angle-right angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked sub-menu'>
+                <li class=''>
+                  <a href='/products/'>
+                    <i class='icon-caret-right'></i>
+                    <span>Products</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='/products/gen_barcode/'>
+                    <i class='icon-caret-right'></i>
+                    <span>Barcode</span>
+                  </a>
+              </ul>
+</li>
+*************************************************************************************************************************
+            <li class='click-nav'>
+              <a class='dropdown-collapse' href="#"><i class='icon-group'></i>
+                <span>People</span>
+                <i class='icon-angle-right angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked sub-menu'>
+                <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Customers</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='customers/add.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='customers.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+*************************************************************************************************************************************               
+ <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Vendors</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='/vendors/add'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='/vendors/index'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              </ul>
+</li>
+************************************************************************************************************************
+             <li class='active expense_menu '>
+                      <a class="" href="expenses.html"><i class='icon-expense_menu'></i>
+              <span>Expenses</span>
+              </a>
+            </li>
+          
+          </ul>
+        </div>
+
+        <div class='navigation show'>
+          <ul class='nav nav-stacked'>
+             <li class=''>
+              <a href='dashboards.html'>
+                <i class='icon-dashboard'></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class='click-nav   '>
+                      <a class="dropdown-collapse" href="#"><i class='icon-edit'></i>
+              <span>Quotes</span>
+              <i class='icon-angle-right angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked sub-menu'>
+
+                <!---->
+              <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>GST Quotes</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='QuoteGsts/add.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='QuoteGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                    </li>
+                    <li class=''>
+                      <a href='drafts/quoteGsts.html'>
+                        <i class='icon-caret-right'></i>
+                        <span>Drafts</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              
+                <!---->
+                <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>Pre GST Quotes</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+                <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='quotes/add.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Create</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='quotes/index.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>View</span>
+                  </a>
+                </li>
+                 <li class=''>
+                  <a href='drafts/quotes.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Drafts</span>
+                  </a>
+                </li>
+               </ul>
+                </li>
+               
+              </ul>
+            </li>
+             
+                <li class='click-nav    '>
+              <a class='dropdown-collapse main' href="#"><i class='icon-money'></i>
+                <span>Sales</span>
+                <i class='icon-angle-right angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked sub-menu'>
+                <li class='  '>
+                <a class='dropdown-collapse' href='#'>
+                  <i class='icon-caret-right'></i>
+                  <span>GST Invoices</span>
+                  <i class='icon-angle-down angle-down'></i>
+                </a>
+
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='InvoiceGsts/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='InvoiceGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='drafts/invoiceGsts.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <!---->
+
+              <!--Proforma GST is created in 14/july/2017-->
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>GST Proforma</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='ProformaGsts/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='ProformaGsts/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='drafts/proformaGsts.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!---->
+
+                <li class='  '>
+                <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Pre GST Invoices</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='invoices/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='invoices/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                   <li class=''>
+                    <a href='drafts/invoice.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              <li class='  '>
+                      <a class="dropdown-collapse" href="#"><i class="icon-caret-right"></i>
+                <span>Pre Proforma</span>
+                <i class='icon-angle-down angle-down'></i>
+                </a>
+        
+                <ul class='nav nav-stacked'>
+                  <li class=''>
+                    <a href='proformas/create.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Create</span>
+                    </a>
+                  </li>
+                  <li class=''>
+                    <a href='proformas/index.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>View</span>
+                    </a>
+                  </li>
+                   <li class=''>
+                    <a href='drafts/proforma.html'>
+                      <i class='icon-caret-right'></i>
+                      <span>Drafts</span>
+                    </a>
+                  </li>
+                 
+                </ul>
+              </li>
+              </ul>
+            </li>
+
+             <li class=''>
+                      <a href="customers.html"><i class='icon-group'></i>
+              <span>Customers</span>
+              </a>     
+              
+            </li>
+
+             <li class='active expense_menu'>
+                      <a class="" href="expenses.html"><i class='icon-expense_menu'></i>
+              <span>Expenses</span>
+              </a>
+            </li>
+          
+            <li class=''>
+                      <a href="companyInfos/add.html"><i class='icon-cog'></i>
+              <span>Settings</span>
+              </a>     
+              
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section id='content'>
+        <div class='container'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12' id='content-wrapper'>
+            
+              
+             <!--  <div class='page-header page-header-with-buttons'>
+                <h1 class='pull-left'>
+                  <i class='icon-dashboard'></i>
+                  <span>Dashboard</span>
+                </h1>
+               
+              </div> -->
+             
+                    <script type="text/javascript" src="js/autosave/angular.min.1506166660.js"></script><script type="text/javascript" src="js/jquery.validation.min.1506166660.js"></script><script type="text/javascript" src="js/angular-ui.min.1506166660.js"></script><script type="text/javascript" src="js/ui-bootstrap-tpls-0.11.0.1506166660.js"></script><script type="text/javascript" src="js/expense.1516280807.js"></script><script type="text/javascript" src="js/FileSaver.1510838070.js"></script><script type="text/javascript" src="js/toaster-0-4-7.1506166660.js"></script><script type="text/javascript" src="js/bootstrap-typeahead.1506166660.js"></script><script type="text/javascript" src="js/bootstrap-typeahead.min.1506166660.js"></script><script type="text/javascript" src="js/ng-table.1506166660.js"></script><script type="text/javascript" src="js/angular-file-upload.min.1506166660.js"></script><link rel="stylesheet" type="text/css" href="css/toaster.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/ng-table.1506166660.css" /><link rel="stylesheet" type="text/css" href="http://hisabing.com/css/select2.css" />	
+
+<div id="ExpenseCtrl" ng:app="ExpenseModule" ng:controller="ExpenseCtrl">
+	<toaster-container toaster-options="{'time-out': '10000','close-button': 'true'}"></toaster-container>
+	<div class='container'>
+		<div class='row' id='content-wrapper'>
+			<div class='col-xs-12'>
+				<div id='orders'>
+					<div class='row'>
+						<div class='page-header'>
+							<h1 class='pull-left'>
+								<i class='icon-expense'></i>
+								<span>Expenses</span>
+							</h1>
+						</div>
+						<div id="loader"><p><span class="overlay-eff">Loading...</span></p></div>
+						<!---Expense add tab starts here-->             
+						<div id="expense_body" class="hide">
+							<div class='col-sm-4 col-lg-4 col-md-4'>
+								<div class='row'>
+									<div class='box'>
+										<div id="add_exp_box" class='box-content'>
+											<form class="form_wrapper" name="form_expense">
+												<div class='row form-group' id="add_expes_body" ng-form>
+													<div id="add_expes_header" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+														<h4>
+															<i class='icon-pencil'></i>
+															<span>Add Expense</span>
+														</h4>
+													</div>
+													<div class="hide">
+														<input type="text" ng-model='mindate' id='mindate'>
+														<input type="text" ng-model='maxdate' id='maxdate'>
+													</div>
+													<div class="col-lg-4 col-md-6 col-sm-8 col-xs-6  pull-right">
+														<label for='expense Date'>Date</label>
+														<div class="input-group">
+															<input type="text" tabindex='0' id='expense_date' data-date-format="dd-mm-yyyy"  ng-model='Expnse_form.Expense.date' class="datepicker form-control" readonly name="data[Expense][date]"/>
+														</div>
+													</div>
+													<div class="clear"></div>
+													<div class="expense col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 30px;">
+														<label for='expense amount'>Amount*</label>
+														<div class="input-group" ng-form name='amt'>
+															<input type="text" id='expense_amount' class="form-control" ng-model='Expnse_form.Expense.amount' ng-pattern="/^\.?\d+((\.)\d+)?$/" placeholder='Amount' name="data[Expense][amount]" required/>
+														</div>
+													</div>
+
+													<div class="expense col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 30px;">
+														<label for='desc'>Description*</label>
+														<div class="input-group" ng-form name='expns_description'>
+															<input type="text" id='desc' class="form-control"  ng-model='Expnse_form.Expense.description' placeholder='Description' name="data[Expense][description]" required/>
+														</div>
+													</div>
+													<div class="clear"></div>
+													<div class="hide">
+														<input type="text" ng-model='Expnse_form.Vendor.id'/>
+													</div>
+													<div class="expense col-lg-6 col-md-6 col-sm-6 col-xs-6">
+														<label for='vendor'>Vendor Name</label>
+														<div class="input-group">
+															<input type="text" id='vendor_name' class="form-control typeahead" ng-model='Expnse_form.Vendor.name' placeholder='Vendor name' autocomplete = off name="data[Vendor][name]"/>
+														</div>
+													</div>
+													<div class="hide">
+														<input type="text" ng-model='Expnse_form.ExpenseType.id'/>
+													</div>
+													<div class="expense col-lg-6 col-md-6 col-sm-6 col-xs-6">
+														<label>Category</label>
+														<input type="text" id="category" placeholder='Category name' class='form-control' autocomplete = off name="data[ExpenseType][name]" ng-model='Expnse_form.ExpenseType.name' ng-focus="get_category_name()" ng-blur="focusout_category()" ng-keydown='category_keypress($event)' ng-change='category_change()' typeahead="typeahead_category.name for typeahead_category in getcategory($viewValue)" typeahead-on-select='set_catid_typehead($item)'/>
+														<ul id="all_category" ng-show='show_allcat' style="display: block; top: 69px; left: 10px; z-index: 2;" class="all_cat dropdown-menu ng-isolate-scope ng-scope"  ng-mouseover="cat_list_hover = 1"  ng-mouseleave="cat_list_hover = 0">
+
+															<li id="list_element{{$index}}" class="ng-scope" ng-click="set_category(categories,'list_element{{$index}}')" ng-mouseenter="selectActive($index)" ng-repeat='categories in categories'><a class="val" tabindex="-1">{{categories.name}}</a><span class='hide cat_id'>{{categories.id}}</span></li>
+														</ul>
+														<ul id="add_category" style="display: block; top: 69px; left: 10px; z-index: 2;" class="dropdown-menu ng-isolate-scope ng-scope" ng-show='add_category' ng-mouseover='add_cat_hover = 1' ng-mouseleave='add_cat_hover = 0'>
+															<li id="add_new_link" style="margin:6px;" ng-click='show_category_toadd()'><a href="">Add New Category</a></li>
+															<li class="ng-scope input_cat" style="margin:6px;" ng-show="cat_input"><input id="add_categ_input" type="text"  autocomplete = off ng-model="Expnse_form.ExpenseType.name" ng-keydown="keypressadd_cat($event,Expnse_form.ExpenseType.name)"/></li>
+															<li id='newcat_entry' ng-show="cat_input"><a class="btn btn-icon-size space-10-lft btn-primary btn-sm"  style="margin-top: 10px; margin-left: 90px; margin-right: 16px" ng-click='add_new_cat(Expnse_form.ExpenseType.name)'>Add</a></li>
+														</ul>
+													</div>
+													<div class="clear"></div>
+													<div id="ven_detail_link" class="hide expense col-lg-6 col-md-6 col-sm-6 col-xs-6">
+														<a href="#">Add Vendor Details</a>
+													</div>
+													<div class="clear"></div>
+													<div id="ven_phone" class="hide expense col-lg-6 col-md-6 col-sm-6 col-xs-6">
+														<label>Vendor Phone No</label>
+														<div>
+															<input type="text" id='vendor_phoneno' class="form-control" ng-model='Expnse_form.Vendor.phone_no' ng-pattern="/^\.?\d+((\.)\d+)?$/" placeholder='Phone no' name="data[Vendor][phone_no]"/>
+														</div>
+													</div>
+													<div id="ven_email" class="hide expense col-lg-6 col-md-6 col-sm-6 col-xs-6">
+														<label>Vendor Email id</label>
+														<div>
+															<input type="text" id="vendor_email" class="form-control" ng-model='Expnse_form.Vendor.email_id' placeholder='Email id' name="data[Vendor][email_id]" ng-pattern="/^.?(([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)(\s*,\s*|\s*$))*?$/"/>
+														</div>
+													</div>
+													<div class="clear"></div>
+													<div id="ven_addr" class="hide expense col-lg-12 col-md-12 col-sm-12 col-xs-12">
+														<label>Vendor Address</label>
+														<div>
+															<input type="text" id="vendor_addr" class="form-control" ng-model='Expnse_form.Vendor.addr' placeholder='Address' name="data[Vendor][addr]" />
+														</div>
+													</div>
+													<div class="clear"></div>
+													<div class="expense col-lg-6 col-md-6 col-sm-6 col-xs-6">
+														<label>Attachment</label>
+														<div class="expense" id="edit_attachment" ng-repeat="attachments in attachments" style="width:280px; margin-bottom:10px; height:50px;">
+															<span class="btn btn-icon-size space-10-lft btn-danger btn-sm icon-trash pull-left" ng-click="delete_attachment(attachments)"></span>
+														<a href="{{attachments.path}}" target="_blank" class="col-lg-8 col-md-8 col-sm-8 col-xs-8 wrap-txt" style="width:200px;">{{attachments.original_filename}}</a>
+														</div>
+														<input class="expense wrap-txt" type="file" id="expenses_attachment" multiple name="file" onchange="angular.element(this).scope().uploadFile(this.files)" style="width: 350px"/>
+													</div>
+													<div class="clear"></div>
+													<div class="expense">
+														<div ng-show='amt.$invalid || expns_description.$invalid'>
+															<p style="color:red; text-align:center;" ng-show='warning' >Some of the required fields are missing</p>
+														</div>
+														<p style="color:red; text-align:center;" ng-show='amt.$error.pattern'>Enter a numerical value in amount*</p>
+														<p style="color:red; text-align:center;" ng-show='category_error'>add a new category to continue</p>
+													</div>
+													<div class="clear"></div>
+													<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+														<button type="submit" ng-click="save($event)" class="btn btn-md btn-primary" ng-show='saving'>Save</button>
+														<p ng-hide='saving'><span class="saving-spinner"></span><span>Saving</span></p>
+													</div>
+													<div class="col-lg-offset-0 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+														<a class="btn btn-md btn-default" ng-click='edit_cancel()' ng-show='cancel_btn'>Cancel</a>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>                        
+							</div>
+							<!---Expense add tab ends here-->  
+
+							<!---Expense table tab starts here-->  
+							<div id='expense_table' class='col-sm-8 list_effect'>
+								<div class='row'>
+									<div class='col-sm-12'>
+										<div class='box'>
+
+											<div id="view_expenses" class='box-content' style="padding-bottom: 90px; min-height: 407px;">
+												<div id="sort_button" class='btn-group col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4' data-toggle='buttons' ng-click="sorting_table()"> 
+													<buttons-radio class="btn-group" model="show_expense" data-toggle="buttons-radio" options='Options'></buttons-radio>
+												</div>
+
+												<div>
+													<a href download id="cons_inv_download" target=""></a>
+													<a href="" class="btn btn-primary" style="float: right;" ng-click='export_excel()' ng-disabled = 'export_disable' >Export</a>
+												</div>
+												
+												<div class="clear"></div>
+												<div class="col-lg-5 col-md-5 col-sm-5 col-xs-4 expense">
+													<h4>Total : <i class="icon-inr"></i> 
+														<span id="all_total">{{total_amt | IndianFractionCurrency}}</span>
+														<span id="category_total" class="hide">{{category_total | IndianFractionCurrency}}</span>
+														<span id="vendor_total" class="hide">{{vendor_total | IndianFractionCurrency}}</span>
+													</h4>
+												</div>
+												<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'>
+													<div class='btn-group'>                        
+														<a class="btn btn-white" id="daterange" href="#"><i class='icon-calendar'></i>
+														<span> Date Range </span>
+														<b class='caret'></b>
+													</a>              
+													</div>
+												</div>
+												<div class="clear"></div>
+
+												<div class="responsive-table">
+													<div id="table_wrapper" class="scrollable-area">
+
+														<div ng-hide="check_table">
+															<p style="color:red; text-align:center; margin-top:20px;" ng-hide="check_table">No Expenses To Show...</p>
+														</div>
+														<div ng-show="check_table">
+															<p class="mobile_alert">Swipe right for full view &gt;&gt;</p>
+
+															<div id='expotable' class='hide'>
+																<!-- <table border="1">
+																	<tr>
+																		<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Date</td>
+																		<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Vendor</td>
+																		<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Description</td>
+																		<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Amount</td>
+																		<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Category</td>
+																	</tr>
+																	<tr ng-repeat="user in export_init"> 
+																		<td style="text-align: left;">02/09/2015</td>
+																		<td style="text-align: left;"><span ng-if='user.vendor_name'><b>{{user.vendor_name}}</b></td>
+																		<td style="text-align: left;">{{user.expense_description}}</td>
+																		<td style="text-align: right;">{{user.amount | IndianFractionCurrency}}</td>
+																		<td style="text-align: left;">{{user.category}}</td>
+																	<tr>
+																</table> -->
+
+														    </div>
+															<table ng-table="tableParams" class="table" show-filter="true">
+																<tr ng-repeat="user in $data" ng-show="check_table" ng-class="{'updatedrow' : recent_expense_id == user.id }">
+																	<td class="col-lg-1 col-md-1 col-sm-1 col-xs-1" data-title="'Date'" sortable="date" filter="{ 'date': 'text' }">{{user.date | date:'dd-MM-yyyy'}}</td>
+																	<td class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-title="'Vendor & Desc'" sortable="expense_description" filter="{ 'vendor_name': 'text' }">
+																		<span ng-if='user.vendor_name'>		<b>{{user.vendor_name}}</b><br><span style="font-size:13px; color:grey;">{{user.expense_description}}</span>
+																		</span>
+																		<span ng-if='!user.vendor_name'><span style="font-size:13px; color:grey;">{{user.expense_description}}</span>
+																		</span>
+																	</td>
+
+																	<td class="col-lg-1 col-md-1 col-sm-1 col-xs-1" data-title="'Amount'" sortable="amount" filter="{ 'amount': 'text' }">{{user.amount | IndianFractionCurrency}}</td>
+																	<td class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-title="'Category'" sortable="category" filter="{ 'category': 'text' }">{{user.category}}</td>
+																	<td class="col-lg-4 col-md-4 col-sm-4 col-xs-4" data-title="'Action'">					       
+
+																		<a ng-click='set_data(user)' class="edit btn space-btn  btn-icon-size btn-primary btn-sm icon-edit view_action" has-tooltip title='Edit' data-original-title='Edit' data-placement='bottom'>Edit</a>
+																		<button class="btn btn-icon-size space-btn btn-primary btn-sm  icon-file-text" ng-click="load_modal('lg',user)" has-tooltip title='View Attachments' data-original-title='View Attachments' ng-show="user.attachment"></button>
+																		<button class='btn btn-icon-size space-btn btn-danger btn-sm icon-trash view_action' has-tooltip title='Delete' data-original-title='Delete' data-placement='bottom' ng-click='delete_expense(user)'></button>
+																	</td>
+																</tr>
+															</table> 
+														</div>
+													</div>
+												</div>
+
+											<!---category table tab starts here-->
+											<div id="category_table" class="hide">
+												<div ng-hide="check_table">
+													<p style="color:red; text-align:center; margin-top:20px;" ng-hide="check_table">No Expenses To Show...</p>
+												</div>
+												<div ng-show="check_table">
+													<label>per page</label>
+													<select ng-change="page_limit_change()" ng-model='pgsize' ng-init="pgsize = 10" class="pull-left"> 
+														<option value='10' selected>10</option>
+														<option value='25'>25</option>
+														<option value='50'>50</option>
+														<option value='100'>100</option>
+													</select>
+													<div id='export_cat' class='hide'>
+											          	<!--<table border="1">
+											          		<tr>
+											          			<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Category</td>
+											          			<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Amount</td>
+											          		</tr>
+											          			
+											          		<tr ng-repeat="category_table in category_table">
+											          			<td style="text-align: left;">{{category_table.name}}</td>
+											          			<td style="text-align: right;">{{category_table.amount | IndianFractionCurrency}}</td>
+											          		</tr>
+											          	</table>-->
+											        </div>
+													<div class="clear"></div>
+													<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'>
+														<h4>Category</h4>
+													</div>
+													<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'>
+														<h4>Amount</h4>
+													</div>
+													<div class="clear"></div>
+													<hr>
+													<div class="clear"></div>
+													<div class="border_bottom" ng-repeat="category_table in category_table|startFrom:currentPage_category*pgsize | limitTo:pgsize">
+														<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'>{{category_table.name}}</div>
+														<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'><i class="icon-inr"></i>{{category_table.amount | IndianFractionCurrency}}</div>
+														<div class="clear"></div>
+													</div>
+
+													<br>
+													<div class="clear"></div>
+													<button ng-disabled="currentPage_category==0" ng-click="currentPage_category=currentPage_category-1">
+													Previous
+													</button>
+													{{currentPage_category+1}}/{{total_pg}}
+													<button ng-disabled="currentPage_category >= total_pg - 1 || pgsize>=category_items" ng-click="currentPage_category=currentPage_category+1">
+													Next
+													</button>
+												</div>
+											</div>
+											<!---category table tab ends here-->  
+
+											<!---vendor table tab starts here-->  
+											<div id="vendor_table" class="hide" >
+												<div ng-hide="check_table">
+													<p style="color:red; text-align:center; margin-top:20px;" ng-hide="check_table">No Expenses To Show...</p>
+												</div>
+												<div ng-show="check_table">
+													<label>per page</label>
+													<select ng-change="vendor_page_limit_change()" ng-model='ven_pgsize' ng-init="ven_pgsize = 10" class="pull-left"> 
+														<option value='10' selected>10</option>
+														<option value='25'>25</option>
+														<option value='50'>50</option>
+														<option value='100'>100</option>
+													</select>
+
+													<div id='export_vendor' class='hide'>
+											          	<!--<table border="1">
+											          		<tr>
+											          			<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Vendor</td>
+											          			<td style="font-weight: bold; background-color:#ccccb3; text-align: center;">Amount</td>
+											          		</tr>
+											          			
+											          		<tr ng-repeat="vendor_table in vendor_table" >
+											          			<td style="text-align: left;">{{vendor_table.name}}</td>
+											          			<td style="text-align: right;">{{vendor_table.amount | IndianFractionCurrency}}</td>
+											          		</tr>
+											          	</table>-->
+											        </div>
+
+													<div class="clear"></div>
+													<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'>
+														<h4>Vendor</h4>
+													</div>
+													<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'>
+														<h4>Amount</h4>
+													</div>
+													<div class="clear"></div>
+													<div class="border_bottom" ng-repeat="vendor_table in vendor_table|startFrom:currentPage_vendor*ven_pgsize | limitTo:ven_pgsize">
+														<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'>{{vendor_table.name}}</div>
+														<div class='col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 expense'><i class="icon-inr"></i>{{vendor_table.amount | IndianFractionCurrency}}</div>
+														<div class="clear"></div>
+													</div>
+													<br>
+													<div class="clear"></div>
+													<button ng-disabled="currentPage_vendor==0" ng-click="currentPage_vendor=currentPage_vendor-1">
+														Previous
+													</button>
+													{{currentPage_vendor+1}}/{{ven_total_pg}}
+													<button ng-disabled="currentPage_vendor >= ven_total_pg - 1 || ven_pgsize>=vendor_items" ng-click="currentPage_vendor=currentPage_vendor+1 ">
+														Next
+													</button>
+												</div>
+											</div>
+											<!---vendor table tab ends here-->   		
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!---Expense table tab ends here-->
+
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal for attachment files display -->
+	<script type="text/ng-template" id="attachmentprocess.html">
+		<div id="attachment_Modal">
+
+			<div class='modal-header'>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="cancel()">×</button>
+				<h4>Attachments</h4>
+			</div>        
+			<div class='modal-body' style="min-height:400px; overflow-y: hidden; overflow-x: hidden;">
+				<div>
+					<div class='attachment_present' ng-hide="todisplay()" ng-repeat="attachment_info in attachment_info | offset: currentPage | limitTo: 1">
+						<div class="attachment_view">
+							<span class="attachment_list"><img src="{{attachment_info.Attachment.file_view}}" class="attachment_listelement"></span>
+						</div>
+						<div class="attachment_details">
+							<div class="expense">
+								<label>File Name</label>
+								<p>{{attachment_info.Attachment.original_filename}}</p>
+							</div>
+							<div class="expense">
+								<label>Expense Date</label>
+								<p>{{attachment_info.Attachment.expense_date}}</p>
+							</div>
+							<div class="expense">
+								<label>Vendor Name</label>
+								<p>{{attachment_info.Attachment.vendor_name}}</p>
+							</div>
+							<div class="expense">
+								<label>Expense Description</label>
+								<p>{{attachment_info.Attachment.expense_description}}</p>
+							</div>
+							<a class="btn btn-md btn-primary" href="{{attachment_info.Attachment.url_path}}" target="_blank" download>Download</a>
+						</div>
+					</div>
+					<a href="" class="icon-chevron-sign-left left-side" ng-click="prev()" ng-show="numPages!=0"></a>
+					<a href="" class="icon-chevron-sign-right right-side"  ng-click="next()" ng-show="numPages!=0"></a>
+				</div> 	    
+				<div class='attachment_empty' ng-show="todisplay()">
+					<p style="text-align:center; color:red; margin-top: 18%;">You currently have no attachments to view</p>
+				</div>
+			</div>
+		</div>
+	</script>
+	<!-- End of attachment modal -->
+</div>
+
+<!-- datepicker config starts here -->
+<script>
+	$('#expense_date').datepicker({
+		format: 'dd-mm-yyyy',
+		autoclose: true,
+	})
+</script>
+<!-- datepicker config ends here -->	
+               
+            </div>
+
+          <!-- Footer starts -->
+      <footer>
+      <!-- <script>
+(function() {
+var interakt = document.createElement('script');
+interakt.type = 'text/javascript'; interakt.async = true;
+interakt.src = "//cdn.interakt.co/interakt/c2ffe18a97189b2c0bc69bfa8826b6a4.js";
+var scrpt = document.getElementsByTagName('script')[0];
+scrpt.parentNode.insertBefore(interakt, scrpt);
+})()
+</script> -->
+<script>
+window.mySettings = {
+// TODO: The current logged in user's email address.
+email: "ikimran1628@gmail.com",
+// TODO: The current logged in user's sign-up date in Unix epoch time.
+created_at: "1569868200",
+app_id: 'c2ffe18a97189b2c0bc69bfa8826b6a4'
+};
+</script>
+         <div class="container">
+         
+            <div class="text-center">
+              <hr>
+
+              <p class='col-lg-12 col-md-12 col-sm-12 col-xs-12 foot-menu'><a href="http://support.hisabing.com/" target="_blank">Get help</a> | <a href='#demo_request_Modal'  data-toggle='modal' id='demo_modal'>Request demo</a></p>
+              <p>Help-line: 9884452536 </p>
+             <p class="copy">Crafted By <a href="http://siamcomputing.com">Siam Computing</a></p>
+            </div>
+            
+         </div>
+      </footer>
+      <!-- Footer ends -->
+      <!--     <footer id='footer'>
+            <div class='footer-wrapper'>
+              <div class='row'>
+                <div class='col-sm-6 text'>
+                  Copyright © 2013 Your Project Name
+                </div>
+                <div class='col-sm-6 buttons'>
+                  <a class="btn btn-link" href="http://www.bublinastudio.com/flatty">Preview</a>
+                  <a class="btn btn-link" href="https://wrapbootstrap.com/theme/flatty-flat-administration-template-WB0P6NR1N">Purchase</a>
+                </div>
+              </div>
+            </div>
+          </footer> -->
+        </div>
+      </section>
+    </div>
+  
+    <script type="text/javascript">
+          $(window).on('load',function(){
+        var pathname = window.location.pathname;
+        var hs_gst_skip = false;
+        var menus = ['dashboards.html','InvoiceGsts/create.html','QuoteGsts/add.html'];
+        if(menus.indexOf(pathname)>-1){
+          if(pathname != 'dashboards.html'){
+            $('#gst_alert').modal({
+                backdrop: 'static',
+                keyboard: false
+            })
+          }
+          console.log(localStorage['hs_gst_skip']);
+          if(localStorage['hs_gst_skip'])
+               hs_gst_skip = true;
+
+          if(pathname != 'dashboards.html' || (pathname == 'dashboards.html' && !hs_gst_skip)){
+            $('#gst_alert').modal('show');
+          }
+        }
+      });
+      function modal_skip(){
+        var pathname = window.location.pathname;
+        localStorage.setItem('hs_gst_skip',true);
+        if(pathname =='dashboards.html'){
+          $('#gst_alert').modal('hide');
+        }else{
+          window.location.href='dashboards.html';
+        }
+        
+      } 
+    </script>
+
+<div class="modal fade" id="gst_alert">
+  
+   <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+        <button type="button" class="close hide" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class='modal-title text-center' id='myModalLabel'>GST is here!</h4>                           
+          </div>        
+       <div class='modal-body container'>
+     
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-bott">
+
+                <p class="link-txt text-center">Please Configure Your GST details to start accessing the GST modules</p>
+
+              </div>
+                
+
+
+              </div>                 
+                  
+  <div class="modal-footer">
+          <input class="esc_nav btn btn-danger" type="button" onclick="modal_skip()" data-dismiss="modal" aria-hidden="true" value="Skip">
+          <input class="esc_nav btn btn-success" type="button" onclick="window.location.href='companyInfos/add/#gst_tab.html'" value="Update" id="">
+          <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4" id="spinner" style="display:none">
+              <h2 class=""> <i class="icon-spinner icon-spin"> </i> Please wait ...</h2>
+              </div>
+                     
+  </div>
+    </div>
+  </div>
+
+</div>
+<div id="demo_request_Modal" class="modal fade" tabindex="-1" >
+   <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class='modal-title' id='myModalLabel'>Request demo</h4>                           
+          </div>        
+       <div class='modal-body container'>
+     
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-bott">
+
+                <p>Hi,</p> 
+
+                <p>Hisabing has a lot of useful features that can help your business get more efficient. We would be glad to give you a walk through and show everything that Hisabing can do. </p>
+
+                <p>Please fill in the form below and we will get in touch soon!</p>
+
+              </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-top">
+                  <div class="col-lg-10 col-lg-offset-12 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                  <label class="mar-bott">Enter your Email id :</label>
+                  <input class="mar-bott col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" value="ikimran1628@gmail.com" placeholder="Email" id="demo_mail_id"/></div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter your Phone :</label><input class="mar-bott col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" value="7848883232" placeholder="Phone" id="demo_phone_id"/></div>
+                  <div class="clearfix"></div>
+                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter the demo date :</label><br>
+                  <input type="text" data-date-format="dd-mm-yyyy"  class="datepicker" placeholder="Date" id="demo_date" value="04-10-2019">
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter the demo time :</label><br>
+                   <select class="selectpicker" id="demo_time">
+                    <optgroup label="Pick a time">
+                      <option>10 am</option>
+                      <option>11 am</option>
+                      <option>12 pm</option>
+                      <option>01 pm</option>
+                      <option>02 pm</option>
+                      <option>03 pm</option>
+                      <option>04 pm</option>
+                      <option>05 pm</option>
+                    </optgroup>
+                  </select>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                </div>
+
+
+              </div>                 
+                  
+  <div class="modal-footer">
+          <div id="validate-email" style="display:none">
+              <p style="color:orange; text-align: center;">Enter a valid Email address</p>
+          </div>
+           <div id="required-email" style="display:none">
+              <p style="color:red; text-align: center;">Enter an Email address</p>
+          </div>
+          <div id="required-date" style="display:none">
+              <p style="color:red; text-align: center;">Enter Demo Date</p>
+          </div>
+          <input class="btn btn-success" type="submit" value="Send" id="demo_send">
+          <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4" id="spinner" style="display:none">
+              <h2 class=""> <i class="icon-spinner icon-spin"> </i> Please wait ...</h2>
+              </div>
+                     
+  </div>
+    </div>
+  </div>
+</div>
+<div id="demo_request_Modal" class="modal fade" tabindex="-1" >
+   <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class='modal-title' id='myModalLabel'>Request demo</h4>                           
+          </div>        
+       <div class='modal-body container'>
+     
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-bott">
+
+                <p>Hi,</p> 
+
+                <p>Hisabing has a lot of useful features that can help your business get more efficient. We would be glad to give you a walk through and show everything that Hisabing can do. </p>
+
+                <p>Please fill in the form below and we will get in touch soon!</p>
+
+              </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar-top">
+                  <div class="col-lg-10 col-lg-offset-12 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                  <label class="mar-bott">Enter your Email id :</label>
+                  <input class="mar-bott col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" value="ikimran1628@gmail.com" placeholder="Email" id="demo_mail_id"/></div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter your Phone :</label><input class="mar-bott col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" value="7848883232" placeholder="Phone" id="demo_phone_id"/></div>
+                  <div class="clearfix"></div>
+                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter the demo date :</label><br>
+                  <input type="text" data-date-format="dd-mm-yyyy"  class="datepicker" placeholder="Date" id="demo_date" value="04-10-2019">
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12"><label>Enter the demo time :</label><br>
+                   <select class="selectpicker" id="demo_time">
+                    <optgroup label="Pick a time">
+                      <option>10 am</option>
+                      <option>11 am</option>
+                      <option>12 pm</option>
+                      <option>01 pm</option>
+                      <option>02 pm</option>
+                      <option>03 pm</option>
+                      <option>04 pm</option>
+                      <option>05 pm</option>
+                    </optgroup>
+                  </select>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                </div>
+
+
+              </div>                 
+                  
+  <div class="modal-footer">
+          <div id="validate-email" style="display:none">
+              <p style="color:orange; text-align: center;">Enter a valid Email address</p>
+          </div>
+           <div id="required-email" style="display:none">
+              <p style="color:red; text-align: center;">Enter an Email address</p>
+          </div>
+          <div id="required-date" style="display:none">
+              <p style="color:red; text-align: center;">Enter Demo Date</p>
+          </div>
+          <input class="btn btn-success" type="submit" value="Send" id="demo_send">
+          <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4" id="spinner" style="display:none">
+              <h2 class=""> <i class="icon-spinner icon-spin"> </i> Please wait ...</h2>
+              </div>
+                     
+  </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");r.type="text/javascript";
+  r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.4.0-min.gz.js";
+  r.onload=function(){e.amplitude.runQueuedFunctions()};var i=t.getElementsByTagName("script")[0];
+  i.parentNode.insertBefore(r,i);function s(e,t){e.prototype[t]=function(){this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+  return this}}var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset"];
+  for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[];return this;
+  };var p=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];
+  for(var l=0;l<p.length;l++){s(c,p[l])}n.Revenue=c;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups"];
+  function v(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+  }}for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){e=(!e||e.length===0?"$default_instance":e).toLowerCase();
+  if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]};e.amplitude=n;
+  })(window,document);
+
+  amplitude.getInstance().init("24c247604a4d79e236ab635a0d3785f6");
+</script><script type="text/javascript">
+ $(document).ready(function(){
+     toastr.options = {
+                closeButton: true,
+                positionClass: 'toast-top-right',
+                onclick: null
+            };
+      $('.pro_services').on('click',function(eve){
+        eve.preventDefault();
+        console.log('asfd');
+          toastr.clear($toast);
+          var $toast = toastr['error']('<a href="companyInfos/account.html" target="_blank"><div> That feature is part of Hisabing Plus. Click this box to see other features that you get in our plus account.</div></a>', 'Sorry');
+      });
+  });
+
+function isEmpty(d){
+
+    for (var k in d) 
+      return false;
+
+     return true
+   }
+  $(document).ready(function(){
+    $.ajax({
+      type: "POST",
+      url: "/app/notification_count",
+      
+
+     success: function(data){  
+        if(data != 0){
+          $('.notification_count').not('.inner_count').html(data); 
+        } 
+        
+      },
+      error: function(data){   
+           $('#info_box').html('<p>Error!..</p>');
+      }
+  });
+  $('.datepicker').datepicker({
+    autoclose: true
+  });
+   $('.notification_menu').on('click', function(){
+        var pathArray = window.location.pathname.split( '/' );
+
+        if(pathArray[1] != 'dashboards'){
+          $.ajax({
+                type: "POST",
+                url: "/app/notification_fetch_all",
+                
+         
+               success: function(data){   
+                
+               var resp=JSON.parse(data);
+               if(!isEmpty(resp)){
+                   $('#list li').remove();
+                  $.each( resp, function( key, value ) {
+                    
+                    $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-user text-success"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                  });
+               }
+                 
+                  //$('.notification_menu').removeClass('show_all');
+                },
+                error: function(data){   
+                     $('#info_box').html('<p>Error!..</p>');
+                }
+            });
+        }else{
+          $.ajax({
+                type: "POST",
+                url: "/app/notification_fetch",
+                
+         
+               success: function(data){   
+                
+               var resp=JSON.parse(data);
+               if(!isEmpty(resp)){
+                $('#list li').remove();
+                  $.each( resp, function( key, value ) {
+                    if(value.Notification.type == 'alert'){
+                       $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-lightbulb text-red"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                    }else if(value.Notification.type == 'activity'){
+                      $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-comments-alt  text-success"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                    }
+                    
+                  });
+                  if(resp.length > 4){
+                    $('#list').append('<li class="widget-footer" id="all_notification" onClick="all_notification()"><a href="#">All notifications</a></li>');
+                  }
+                  
+               }
+                  
+                  //$('.notification_menu').removeClass('show_all');
+                },
+                error: function(data){   
+                     $('#info_box').html('<p>Error!..</p>');
+                }
+            });
+            
+        }
+
+        $.ajax({
+                type: "POST",
+                url: "/app/notification_notice_update",
+                
+         
+               success: function(data){   
+                  if(data == 0){
+                   $('.notification_count').not('.inner_count').html('');
+                  }
+                },
+                error: function(data){   
+                     $('#info_box').html('<p>Error!..</p>');
+                }
+            });
+        
+    });
+});
+function all_notification(){
+
+            $('.notification_block').addClass('show_all');
+              $('#list li').remove();
+              $('#all_notification').remove();
+              $('#list').append('<img src="http://hisabing.com/img/ajax-loaders/17.gif" style="margin: 126px">');
+               $.ajax({
+                  type: "POST",
+                  url: "/app/notification_fetch_all",
+                  
+           
+                 success: function(data){   
+                  
+                 var resp=JSON.parse(data);
+                    $.each( resp, function( key, value ) {
+                      $('#list img').remove();
+                       if(value.Notification.type == 'alert'){
+                         $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-lightbulb text-red"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                      }else if(value.Notification.type == 'activity'){
+                        $('#list').append('<li><a href="#"><div class="widget-body"><div class="pull-left icon"><i class="icon-comments-alt  text-success"></i> </div><div class="pull-left text msg'+key+'">'+value.Notification.msg+'<small class="text-muted pull-right">'+value.Notification.date+'<br>'+value.Notification.time+'</small></div></div></a></li>');
+                      }
+                    });
+                    $('.notification_block').removeClass('show_all');
+                  },
+                  error: function(data){   
+                       $('#info_box').html('<p>Error!..</p>');
+                  }
+              });
+          }
+
+
+
+</script>
+
+  </body>
+</html>

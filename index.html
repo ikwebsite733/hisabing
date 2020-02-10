@@ -1,0 +1,757 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en"  ng:app>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Quotation Management, Invoicing Software, Cloud Accounting , Simple Invoicing">
+        
+        <title>Invoicing Done Right | Quotation Management | Hisabing</title>
+        <!-- Bootstrap core CSS -->
+                <link rel="stylesheet" type="text/css" href="css/bootstrap.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/home/bootstrap-theme.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/home/bootstrap-reset.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/home/icon-hover-component.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/home/animate.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/home/style-responsive.1506166660.css" /><link rel="stylesheet" type="text/css" href="css/home/style.1506166660.css" /><script type="text/javascript" src="js/jquery.min.1506166660.js"></script><script type="text/javascript" src="js/home/jquery.simple-text-rotator.1506166660.js"></script><script type="text/javascript" src="js/bootstrap.1506166660.js"></script><script type="text/javascript" src="js/modernizr.min.1506166660.js"></script><script type="text/javascript" src="js/home/jquery.parallax-1.1.3.1506166660.js"></script><script type="text/javascript" src="js/home/jquery.localscroll-1.2.7-min.1506166660.js"></script><script type="text/javascript" src="js/home/jquery.scrollTo.1506166660.js"></script><script type="text/javascript" src="js/home/jquery.easing.min.1506166660.js"></script><script type="text/javascript" src="js/home/link-hover.1506166660.js"></script><script type="text/javascript" src="js/angular.min.1506166660.js"></script><script type="text/javascript" src="js/angular-ui.min.1506166660.js"></script><script type="text/javascript" src="js/home/jquery.appear.1506166660.js"></script><script type="text/javascript" src="js/home/jquery.wait.1506166660.js"></script><script type="text/javascript" src="js/home/scripts.js?v=1"></script><script type="text/javascript" src="js/home/home.1506166660.js"></script>       <!--external css-->
+        <link href="assets/font-awesome/css/font-awesome.1506166660.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+          <!--Page loader-->
+        <div class="page-mask">
+            <div class="page-loader"> 
+
+                <div class="spinner"></div>
+                Any Second Now...
+            </div>
+
+        </div>
+        <!--Page loader ends-->
+           <!--timeline menu start-->
+        <div id="timeline">
+            <div class="line">
+            </div>
+            <div class="link link-dot-position-1 active">
+                <span class="dot">&nbsp;</span><a href="#start" class="innerlink">Start</a>
+            </div>
+           
+            <div class="link link-dot-position-3">
+                <span class="dot">&nbsp;</span><a href="#about" class="innerlink">About</a>
+            </div>
+            <div class="link link-dot-position-5">
+                <span class="dot">&nbsp;</span><a href="#features" class="innerlink">Features</a>
+            </div>
+            <div class="link link-dot-position-8">
+                <span class="dot">&nbsp;</span><a href="#price" class="innerlink">Pricing</a>
+            </div>
+            <div class="link link-dot-position-9">
+                <span class="dot">&nbsp;</span><a href="#contact" class="innerlink">Contact</a>
+            </div>
+        </div>
+        <!--timeline menu end-->
+        <!--header start-->
+        <nav id="top-bar" class="fix-top">
+            <div class="container">
+                <div class="col-lg-12">
+               
+                <div class="navbar-header responsive-header col-lg-2  col-md-3  col-sm-2  col-xs-2">
+                    <!--menu wrap for responsive menu--> 
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--menu wrap for responsive menu ends--> 
+                    <!--logo--> 
+                    <a href="#home" class="navbar-brand logo">
+                        <img src="img/favicon.png" alt="sonnet">
+                    </a>
+                     <!--logo ends--> 
+                </div>
+                 <!--menu and login buttons--> 
+                <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 pull-right">
+                     <!--login and signup button--> 
+                    <div class="col-lg-offset-6 col-lg-6 col-md-offset-4 col-md-8 col-sm-12 col-xs-12 home-btn">
+                        <a class="btn-blue col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-2 col-xs-3 btn" href="login.html"><span>Login</span></a>
+                        <a class="btn-green col-lg-offset-1 col-lg-3 col-md-offset-1 col-md-3 col-sm-offset-2 col-sm-2 col-xs-3 btn" href="signup1.html"><span>Sign Up Free</span></a>
+                    </div>
+                     <!--login and signup button ends--> 
+                    <nav class="col-lg-offset-5 col-lg-7 col-md-offset-2 col-md-10 col-sm-12 col-xs-12  pull-right  collapse navbar-collapse navbar-ex1-collapse ">
+                     <!--Menu--> 
+                    <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12 col-xs-12 topmenu">
+                        <li class=""><a href="#start" title="start">Start</a></li>
+                        <li class="seperator">/</li>
+                        <li><a href="#about" title="about">About</a></li>
+                        <li class="seperator">/</li>
+                        <li><a href="#features" title="features">Features </a></li>
+                        <li class="seperator">/</li>
+                        <li><a href="#price" title="pricing">Pricing</a></li>
+                        <li class="seperator">/</li>
+                        <li><a href="http://blog.hisabing.com" target="_blank" title="blog">Blog</a></li>
+                        <li class="seperator">/</li>
+                        <li><a href="http://support.hisabing.com/" target="_blank" title="support">Support</a></li>
+                        <li class="seperator">/</li>
+                        <li><a href="#contact" title="contact">Contact</a></li>
+                    </ul>
+                     <!--Menu ends--> 
+                </nav>
+                </div>
+                 <!--menu and login buttons ends--> 
+            </div>
+        </div>
+        </nav>
+        <!--header end-->
+        <!--banner start-->
+        <section class="banner appear" id="home">
+            <div class="container">
+                <div class="row start">
+                    <div class="common-heading light-color text-center ban-head-pos">
+                        <div class="border-top-bot">
+                            <h1>Quotation</h1>
+                            <h3 class="extra"><em>done</em></h3>
+                            <h4><span class="rotate">Right,Easy,Anywhere,Cool</span></h4>
+                        </div>
+                    </div>
+                    <div class="text-center str">
+                        <a href="#start" id="" class="btn btn-tour ">
+                            Find out how </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--banner end-->
+        <!--starting step start-->
+        <section id="start" class="appear">
+            <div class="container">
+                <div class="row feature">
+                    <div class="common-heading dark-color text-center">
+                        <h1 class="animated animate-from-left">What you have been missing - </h1>
+                        <h4 class="animated animate-from-right">All the right tools to make invoicing efficient</h4>
+                    </div>
+                    <div class="feature-wrap">
+                     <!--col 1-->
+                        <div class="col-lg-4 col-sm-4 text-center animated animate-from-left">
+                            <div class="feature-row">
+                                <div class="f-icon hi-icon-effect-1 hi-icon-effect-1a">
+                                    <a href="#" class="hi-icon ">
+                                        <i class="quotation-icon"></i>
+                                    </a>
+                                </div>
+                                <h2 class="green-color">Quotation Management</h2>
+                                <p>
+                                    Create and send professional quotations with your branding  from within the system. You focus on the business while we help you put your best foot forward.
+                                </p>
+                            </div>
+                        </div>
+                        <!--col 2-->
+                        <div class="col-lg-4 col-sm-4 text-center animated animate-from-bottom">
+                            <div class="feature-row">
+                                <div class="f-icon hi-icon-effect-2nd hi-icon-effect-2nda">
+                                    <a href="#" class="hi-icon ">
+                                        <i class="customizable-icon"></i>
+                                    </a>
+                                </div>
+                                <h2 class="yellow-color">Invoice Generation</h2>
+                                <p>
+                                    Create a new invoice or convert a quote, no more scrambling about to find out your customers info or previous prices. Do business truly, at the speed of thought.
+                            </div>
+                        </div>
+                        <!--col 3-->
+                        <div class="col-lg-4 col-sm-4 text-center animated animate-from-right">
+                            <div class="feature-row">
+                                <div class="f-icon hi-icon-effect-3rd hi-icon-effect-3rda">
+                                    <a href="#" class="hi-icon ">
+                                        <i class="hasselfree-icon"></i>
+                                    </a>
+                                </div>
+                                <h2 class="blue-color">Hassle Free Everything</h2>
+                                <p>
+                                   Emails were never meant to manage quotes. At hisab<em>ing</em>, you manage all your quotes and invoices in one place. Search , Edit, Review - do it all and ofcourse, do it anywhere. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                       <!--Video--> 
+                        <!-- <iframe src="//player.vimeo.com/video/88623185" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+                    </div>
+                    <!--sign up button-->
+                    <div class="f-btn-row text-center">
+                        <h4 class="animated animate-from-left">Convinced Already? Lets Get Cracking!</h4>
+                        <div class="btn-effect">
+                            <section>
+                                <p>
+                                    <a href="signup1.html" class="btn-custom btn-1 btn-1b btn-purchase-red"><span>Signup for Free</span></a>
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                     <!--sign up button ends-->
+                </div>
+            </div>
+        </section>
+        <!--starting step end-->
+        <!--about step start-->
+        <section id="about" class="appear">
+            <div class="container">
+                <div class="row">
+                    <div class="common-heading light-color text-center">
+                        <div class="common-heading light-color text-center  animated ani-hide">
+                            <h1 class="animated animate-from-left">About</h1>
+                        </div>
+                         <!--About-->
+                        <div class="about-details">
+                         <!--About tag line-->
+                            <div class="col-lg-6 col-sm-6">
+                                <h1 class="abt-intro animated animate-from-left">
+                                    Tailor made  <br>
+                                    system <br>
+                                    for the Indian <br>
+                                    Businesses </h1>
+                            </div>
+                             <!--About Content-->
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="animated animate-from-right">
+                                    <p class="abt-details">
+                                    Hisabing is an easy to use invoicing system. It makes you look good when sending out quotes and helps you manage them when you need it. It is an answer to the frustrations created when using an email service for managing quotes. Having been in close contact with small and medium enterprises, we have experienced these difficulties first hand and tailored this solution accordingly.
+                                    </p>
+                                    <br>
+                                    <p class="abt-details">
+                                        Crafted with love by the folks at <a href="http://siamcomputing.com" target="_blank">Siam Computing</a>, it is hosted on the best hardware out there to ensure your business never stops. 
+                                        <br /> Looking for more? Check out the <a href="#features">features</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       <!--About ends-->
+                    </div>
+                </div>
+            </div>
+              <!--newsletter start-->
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h1 class="animated animate-from-left">Keep In Touch</h1>
+                        <p class="animated animate-from-right  wht-txt">
+                            Sign Up for Email Updates on on News &AMP; Offers
+                        </p>
+                    </div>
+                    <div class="col-lg-7">
+                        <form role="form" class="form-inline animated animate-from-left" action="//hisabing.us8.list-manage.com/subscribe/post?u=3f31b5805cb914bfb99e75b9c&amp;id=a5e3ba3996" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                            <div class="form-group col-lg-9 col-xs-12 col-sm-9" ng-form name="emailfield">
+                                <input type="email" placeholder="Enter email address" class="form-control email" name="EMAIL" id="mce-EMAIL" ng-valid-email ng-model="email" required  ng-invalid-required required>
+                                <span id="news_mail_load" style="display: none; margin-left:74%;"><i class="icon-spinner icon-spin  bigger-200 loading_icon"> </i></span> 
+                                <span ng-show="emailfield.$error.email" class="row pull-right help-inline errormsg  text-red">Enter Valid Email-Id</span>
+                <span ng-show="emailfield.$error.required && emailfield.$dirty " class="row pull-right help-inline errormsg  text-red">* Required</span>
+                            </div>
+                            <div class="col-lg-3 col-xs-12 col-sm-3">
+                                <button type="submit" ng-disabled="!emailfield.$valid"  class="btn btn-newsletter col-xs-12 animated animate-from-right " id="btn_newsletter">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--newsletter end-->
+        </section>
+        <!--about step end-->
+        <!--features step start-->
+        <section id="features" class="appear">
+            <div class="container">
+                <div class="row">
+                    <div class="common-heading light-color text-center">
+                        <h1 class="animated animate-from-left">Features</h1>
+                        <h4 class="animated animate-from-right">Here is what makes us awesome</h4>
+                    </div>
+                   <div class="row"> 
+                                 <!--feature 1-->
+                                        <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-left">
+                                               <i class="icon-edit-sign"></i>
+                                               <h4>Professionally Created</h4>
+                                               <p>
+                                                   You only focus on entering the product info and we format all that into a professional quote in a pdf format and mail them to your customer.
+                                               </p>
+                                           </div>
+                                       </div>
+                                 <!--feature 2-->
+                                       <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-bottom">
+                                               <i class="icon-tasks"></i>
+                                               <h4>Easy Management</h4>
+                                               <p>
+                                                  Search, Edit and Revise your quotes/invoices all from one single location. No more searching and sifting through emails or going back and forth on lost communication.
+                                               </p>
+                                           </div>
+                                       </div>
+                                 <!--feature 3-->
+                                       <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-right">
+                                               <i class="icon-undo"></i>
+                                               <h4>Historical Info</h4>
+                                               <p>
+                                                   One of the most important aspect while giving a quote is to be able to know the price given previously. At the click of a button, get all the previous prices for a product/service.
+                                               </p>
+                                           </div>
+                                       </div>
+                                     
+                            </div>
+                            <br/><br/>
+                              <div class="row"> 
+                               <!--feature 4-->
+                                        <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-left">
+                                               <i class="security-icon"></i>
+                                               <h4>Security &amp; Privacy</h4>
+                                               <p>
+                                                  Yours is yours! We understand the need to keep your information confidential &amp; secure. At hisabing you can be rest assured that there is no snooping with your data.
+                                               </p>
+                                           </div>
+                                       </div>
+                                 <!--feature 5-->
+                                       <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-bottom">
+                                               <i class="sms-icon"></i>
+                                               <h4>SMS Updates</h4>
+                                               <p>
+                                                   You and your clients get an SMS update every time a quote/invoice is sent. This way you never lose a single communication sent.
+                                               </p>
+                                           </div>
+                                       </div>
+                                 <!--feature 6-->
+                                       <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-right">
+                                               <i class="payment-icon"></i>
+                                               <h4>Payment Tracking</h4>
+                                               <p>
+                                                  While you are busy running your business let hisabing automatically remind your customers when its time to pay. You can set your preferences on how frequently to remind.
+                                               </p>
+                                           </div>
+                                       </div>
+                            </div>
+                    </div>
+                            <br> <br>
+                            <div class="row">
+                             <!--feature 7--> 
+                                        <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-left">
+                                               <i class="icon-bar-chart"></i>
+                                               <h4>Reports & Metrics</h4>
+                                               <p>
+                                                   How many quotes did I send out? How many did I convert? What is the tax payable this month? Answering all these questions and more by summing them up beautifully on the dashboard. Also get weekly email updates on whats been happening at your business.
+                                               </p>
+                                           </div>
+                                       </div>
+                             <!--feature 8-->
+                                       <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-bottom">
+                                               <i class="icon-user"></i>
+                                               <h4>Customer Info</h4>
+                                               <p>
+                                                   Get all the information about your customers, manage their communication details. Also get status of quotes raised or amount of payment due to you by them.
+                                               </p>
+                                           </div>
+                                       </div>
+                                 <!--feature 9-->
+                                       <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-right">
+                                               <i class="icon-time"></i>
+                                               <h4>Support</h4>
+                                               <p>
+                                                   Get round the clock support and assistance by the hisab<em>ing</em> team. Have a question, want to request a suggest? Be it anything. Send an email to hisabing@siamcomputing.com and we will get back to you.Promise!
+                                               </p>
+                                           </div>
+                                       </div>
+                            </div>
+                                <br> <br>
+                            <div class="row">
+                                <!--feature 10--> 
+                                        <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-left">
+                                               <i class="icon-save"></i>
+                                               <h4>Auto Draft</h4>
+                                               <p>
+                                                   This feature is a particularly useful one. When an invoice/ quotation creation is left midway due to interruption, it gets auto saved in the draft section. This allows the user to resume creating it whenever he wants.
+                                               </p>
+                                           </div>
+                                       </div>
+                             <!--feature 11-->
+                                       <div class="col-lg-4 col-sm-4 text-center">
+                                           <div class="service-box animated animate-from-bottom">
+                                               <i class="icon-table"></i>
+                                               <h4>Export to Excel</h4>
+                                               <p>
+                                                  This feature allows the user to export an invoice/ quotation to an excel sheet, when sending it to the customer. The details are automatically arranged and aligned , saving effort and time.
+                                               </p>
+                                           </div>
+                                       </div>
+                            </div>
+             </div>
+             <div class="purchase-block">
+                <div class="container">
+                    <div class="row">
+                     <!--quote-->
+                        <div class="quote  text-center light-color">
+                            <i class=" icon-quote-left top"></i>
+                            Use it anywhere,anytime. <i class=" icon-quote-right bot"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--services step end-->
+  <!--design purchase start-->
+        <div id="design-purchase">
+            <div class="container">
+                <div class="row">
+                 <!--Sign up button-->
+                    <div class="col-lg-9">
+                        <p class="animated animate-from-left wht-txt">
+                           Start making professional quality invoices in a minute.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 text-right animated animate-from-right">
+                        <div class="btn-effect">
+                            <section>
+                                <p>
+                                    <a href="signup.html" class="btn-custom btn-1 btn-1b btn-d-purchase "><span>Signup for free</span></a>
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--design purchase end-->
+        <!--price step start-->
+        <section id="price" class="appear">
+            <div class="container">
+                <div class="row">
+                    <div class="common-heading light-color text-center">
+                        <h1 class="animated animate-from-left">Pricing</h1>
+                       <!--  <h4 class="animated animate-from-right wht-txt"> We are currently in beta! Which means you are free to use our services to your hearts content today. Once out of beta, we will charge for add-on features provisionally.</h4> -->
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--price start-->
+                    <div class="col-lg-offset-0 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-5">
+                        <div class="pricing-table animated animate-from-left">
+                            <div class="pricing-head">
+                                <h1> Free! </h1>
+                                <h2>
+                                    <span class="note"></span>Free</h2>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li>Unlimited Quotes</li>
+                                <li>Unlimited Invoices</li>
+                                <li>Anywhere, Anytime Access </li>
+                            </ul>
+                            <div class="price-actions">
+                                <a href="https://www.hisabing.com/registration" class="btn">Get Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-offset-0 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-5">
+                        <div class="pricing-table animated animate-from-bottom">
+                            <div class="pricing-head">
+                                <h1> Plus </h1>
+                                <h2>
+                                    <span class='icon-inr'></span>3,650 /yr</h2>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li>SMS Updates</li>
+                                <li>Payment Tracking</li>
+                                <li>File Upload</li>
+                                <li>Auto Payment Reminder</li>
+                                <li>Summary Email</li>
+                                <li>Export to Excel</li>
+                                <li>Auto Draft</li>
+                                <li>Expenses</li>
+                            </ul>
+                            <div class="price-actions">
+                                <a href="https://www.hisabing.com/registration" class="btn">Get Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-offset-0 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-5">
+                        <div class="pricing-table animated animate-from-right">
+                            <div class="pricing-head">
+                                <h1> Trader Add-on </h1>
+                                <h2>
+                                    <span class='icon-inr'></span>5,250 /yr</h2>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li>Purchase Entry</li>
+                                <li>Purchase Order</li>
+                                <li>Inquiry</li>
+                                <li>Stock Management</li>
+                                <li>Vendor module</li>
+                                <li>Estimates module</li>
+                                <li>Barcode generation</li>
+                                <li>Low price alert</li>
+                                <li>MOQ</li>
+                                <li>Custom SKU</li>
+                                <li>Custom Item name</li>
+                                <li>Follow up</li>
+                            </ul>
+                            <div class="price-actions">
+                                <a href="https://www.hisabing.com/register" class="btn">Get Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!--features step end-->
+        <!--contact step start-->
+        <div id="contact" class="appear">
+            <div class="container">
+                <div class="row">
+                    <div class="common-heading dark-color text-center">
+                        <h1 class="animated animate-from-left">Send Message</h1>
+                        <h4 class="animated animate-from-right">Drop a line. Your word is most important to us.</h4>
+                    </div>
+                    <span id="contact_mail_load" style="display: none; margin-left:50%;"><i class="icon-spinner icon-spin  bigger-500 loading_icon"> </i></span> 
+                    <form role="form">
+                        <div class="col-lg-6 animated animate-from-left">
+
+                            <div class="form-group" ng-form name="con_name">
+                                <label for="name">Your Name </label>
+                                <input type="text" placeholder="" id="contact_name" class="form-control" ng-model="contacname"  ng-invalid-required required>
+                                 <span ng-show="con_name.$invalid && con_name.$dirty" class="row pull-right help-inline errormsg  text-red">  * Required</span>
+                            </div>
+                            <div class="form-group" ng-form name="con_emailfield">
+                                <label for="exampleInputEmail1">Your Email </label>
+                                <input type="email" placeholder="" id="contact_email" class="form-control" ng-valid-email ng-model="con_email" required  ng-invalid-required required>
+                                 <span ng-show="con_emailfield.$error.email" class="row pull-right help-inline errormsg  text-red">Require Valid Email-Id</span>
+                <span ng-show="con_emailfield.$error.required && con_emailfield.$dirty " class="row pull-right help-inline errormsg  text-red">* Required</span>
+                            </div>
+                            <div class="form-group" ng-form name="subject">
+                                <label for="subject">Subject</label>
+                                <input type="text" placeholder="" id="contact_sub" class="form-control" ng-model="sub"  ng-invalid-required required>
+                                <span ng-show="subject.$invalid && subject.$dirty" class="row pull-right help-inline errormsg  text-red">  * Required</span>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 animated animate-from-right" ng-model="msg" required ng-invalid-required required>
+                            <div class="form-group">
+                                <label>Your Message</label>
+                                <textarea class="form-control" rows="8" id="contact_msg"></textarea>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="text-center">
+
+                             <button class="btn btn-send animated animate-from-bottom" id="contact_mail" type="submit"><span>Send Message</span></button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!--contact step end-->
+        <!--footer start-->
+        <div class="footer">
+          <!-- <script>
+        (function() {
+            var interakt = document.createElement('script');
+                interakt.type = 'text/javascript'; interakt.async = true;
+                interakt.src = "//cdn.interakt.co/interakt/c2ffe18a97189b2c0bc69bfa8826b6a4.js";
+                var scrpt = document.getElementsByTagName('script')[0];
+                scrpt.parentNode.insertBefore(interakt, scrpt);
+        })()
+        </script> -->
+            <div class="container">
+                <div class="row footer" >
+                 <!--quick links-->
+                    <div class="col-lg-2 col-sm-12 content-left animated animate-from-left">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-menu"><li ><a href="index.html" target="_blank">About</a></li>
+                            <li><a href="https://www.hisabing.com/login.html" target="_blank">Login</a></li>
+                            <li><a href="https://www.hisabing.com/register" target="_blank">Register</a></li>
+                            <li><a href="http://support.hisabing.com/" target="_blank">Support</a></li>
+                            <li><a href="http://blog.hisabing.com/" target="_blank">Blog</a></li>
+                            
+                        </ul>
+                    </div>
+                     <!--News letter signup and social media-->
+                     <div class="col-lg-2 col-sm-12 content-left animated animate-from-left">
+                        <h3>Connect</h3>
+                        <!-- Begin MailChimp Signup Form -->  
+                        <div id="mc_embed_signup">
+                        <form action="//hisabing.us8.list-manage.com/subscribe/post?u=3f31b5805cb914bfb99e75b9c&amp;id=a5e3ba3996" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_3f31b5805cb914bfb99e75b9c_a5e3ba3996" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+                             <div class="wrap-icons">
+                                <a class="fb-icon" href="https://www.facebook.com/hisabing" target="_blank"></a>
+                                <a class="tweet-icon" href="https://twitter.com/Hisabing" target="_blank"></a>
+                                <a class="link-icon" href="http://qa.linkedin.com/company/hisabing" target="_blank"></a>
+                                <div class="clear"></div>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 text-center animated animate-from-top">
+                                <a href="#home" class="f-logo">
+                                    <img src="img/Hisabing-logo-whitetransp.png" width="180px" alt="">
+                        </a>
+                    </div>
+                     <!--Latest News-->
+                     <div class="col-lg-2 col-sm-12 content-right animated animate-from-left">
+                       <h3>Quotes / Invoices Generated</h3>
+                       <h1>109936</h1>
+                    </div>
+                     <!--Contact-->
+                    <div class="col-lg-2 col-sm-12 content-right animated animate-from-right">
+                        <h3>Contact</h3>
+                            <p>112/1 Broadway</p>
+                            <p>3rd Floor Nafees Manzil</p>
+                           <p> Chennai 108 , India </p>
+                            <p>Tel :  <a href="tel:04443009964">(044)43009964</a></p>
+                            <p>Email : <a href="mailto:hisabing@siamcomputing.com">hisabing@siamcomputing.com</a></p>
+                          </div>
+                </div>
+                <div class="row text-center">
+                    <p><a href='#terms_Modal' data-toggle='modal'>Terms &amp; Condition</a> | <a href='#policy_Modal' data-toggle='modal'>Privacy Policy</a></p>
+                    <p>Crafted by <a href="http://www.siamcomputing.com/" target="_blank">Siam Computing</a></p>
+                <div>
+            </div>
+        </div>
+            
+                
+          <script type="text/javascript">
+        $(".rotate").textrotator({
+          animation: "dissolve",
+          speed: 2000,
+        separator: ","
+        });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45810794-1', 'hisabing.com');
+  ga('send', 'pageview');
+
+</script>
+
+ <div id="terms_Modal" class="modal fade" tabindex="-1" style="min-width:900px;">
+   <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 class='modal-title' id='myModalLabel'>TERMS OF SERVICE</h3>
+  </div>
+         <input type="hidden" id="quote_id">
+          <input type="hidden" id="controller_name">
+  <div class="modal-body">
+    <p> Your use of the services provided by hisabing.com implies that you have read and agreed to the terms and policies mentioned in this Terms of Service that follow. ‘Hisabing ERP Solutions Pvt Ltd’ with its office at 112/1, Broadway, 3rd Floor Nafees Manzil, Chennai – 600 108, holds the sole right to modify the Terms of Service at any time. Hence, it is advisable that you check the Terms of Service from time to time, and your continued use of our service after such modifications shall be understood to be your acceptance of those modifications.</p>
+    <h3>1. YOU ARE RESPONSIBLE FOR YOUR ACCOUNT</h3>
+    <ol>
+        <li>The Users shall be solely responsible for their usage of the service. Hisabing ERP Solutions Pvt Ltd shall not be held liable for any claims or actions that arise out of the same</li>
+        <li>It shall be the responsibility of the user to protect his/her login information namely username and password and ensure that these details are not disclosed in order to avoid unauthorized use of their account.</li>
+        <li>Users shall not modify or change any part of the service under any circumstances</li>
+    </ol>
+    <h3>2. FEES AND CHARGES</h3>
+     <ol>
+        <li>Service provided to the user by Hisabing ERP Solutions Pvt Ltd on <a href="https://www.hisabing.com/" target="_blank">www.hisabing.com</a> is free of cost as of now, since it is in beta mode.</li>
+        <li>‘Hisabing ERP Solutions Pvt Ltd’ reserves the right to make the service chargeable in the future. Users shall be notified in advance if the services are made chargeable, upon which it shall be the sole discretion of the users to choose whether to continue using the service or not.</li>
+    </ol>
+     <h3>3. TERMINATION OF USER ACCOUNTS</h3>
+     <ol>
+        <li>Users have the right to terminate their account at any time.</li>
+        <li>‘Hisabing ERP Solutions Pvt Ltd’ has the right to terminate the account of any user at any time for violation of these Terms of Use or any other reason whatsoever.</li>
+    </ol>
+    <h3>4. YOURS IS YOUR. MINE IS MINE</h3>
+     <ol>
+        <li>The copyright and all other intellectual property rights over all information and content made available by any user shall vest with that user/the respective owners and Hisabing ERP Solutions Pvt Ltd shall not at any point claim any intellectual property rights over any such content.</li>
+        <li>It is hereby explicitly provided that Hisabing ERP Solutions Pvt Ltd shall not have any intellectual property right over any material created using the service and shall not be liable for any claims on this front from any user or any other party</li>
+        <li>The copyright over any content made available on the website by Hisabing ERP Solutions Pvt Ltd shall belong to us. Users shall not reproduce any content over which Hisabing ERP Solutions Pvt Ltd has copyright without obtaining our prior written consent to do so.</li>
+    </ol>
+    <h3>5. USER SUPPORT </h3>
+     <ol>
+        <p>Our official support website is <a href="http://support.hisabing.com/" target="_blank">support.hisabing.com</a>,However, users can raise any questions or concerns by sending an email to <a href="mailto:hisabing@siamcomputing.com" target="_blank">hisabing@siamcomputing.com</a>. The time within which a response may be received shall vary.</p>
+    </ol>
+    <h3>6. SECURITY</h3>
+     <p>The user understands that some of the information and content made use of by <a href="https://www.hisabing.com/" target="_blank">www.hisabing.com</a> as part of the service may be transferred in unencrypted form across numerous networks.</p>
+    <h3>7. DISCLAIMER</h3>
+     <ol>
+        <li>The software, services and all other materials made available to the user by Hisabing ERP Solutions Pvt Ltd through www.hisabing.com are on an “AS IS” basis without any warranty of any kind including but not limited to the accuracy, consistency, applicability, security and error-free nature of the service.</li>
+        <li>The user understands and agrees that all material or data obtained through the service is done at the user’s own discretion and risk. The user shall be solely responsible for any damage that occurs as a result of this.</li>
+    </ol>
+    <h3>8. INDEMNITY AND LIMITATION OF LIABILITY</h3>
+     <ol>
+        <li>The software, services and all other materials made available to the user by Hisabing ERP Solutions Pvt Ltd through www.hisabing.com are on an “AS IS” basis without any warranty of any kind including but not limited to the accuracy, consistency, applicability, security and error-free nature of the service.</li>
+        <li>The user understands and agrees that all material or data obtained through the service is done at the user’s own discretion and risk. The user shall be solely responsible for any damage that occurs as a result of this.</li>
+    </ol>
+    <h3>9. ADVERTISEMENTS</h3>
+     <ol>
+        <li>Advertisements containing information on products and services provided by third-parties and links to third-party websites may be made available to the user on <a href="https://www.hisabing.com/" target="_blank">www.hisabing.com</a> as part of the service.</li>
+        <li>These advertisements are only for information purpose of the user and Hisabing ERP Solutions Pvt Ltd does not endorse the content of the same.</li>
+    </ol>
+    <h3>10. GENERAL TERMS/MISCELLANEOUS</h3>
+     <ol>
+        <li><b>Disputes:</b>All disputes that between Hisabing ERP Solutions Pvt Ltd and the user will be resolved by arbitration. Each party shall nominate one member to the Arbitration Board and these two members shall elect a neutral third-member. The decision of the Arbitration Board shall be final and binding upon both the user and Hisabing ERP Solutions Pvt Ltd.</li>
+        <li><b>Governing law:</b>These Terms of Service shall be governed by the laws of the Republic of India and the courts situated in Chennai, India shall have exclusive jurisdiction with respect to any cause of action arising out of the use of the service by the user.</li>
+         <li><b>Waiver:</b>Failure on the part of Hisabing ERP Solutions Pvt Ltd to enforce any rights created under these Terms of Service shall not be considered a waiver of any such right for future purposes.</li>
+    </ol>
+  </div>
+  <div class="modal-footer">    
+  </div>
+    </div>
+  </div>
+</div>
+ <div id="policy_Modal" class="modal fade" tabindex="-1" >
+   <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 class='modal-title' id='myModalLabel'>PRIVACY POLICY</h3>
+  </div>
+         <input type="hidden" id="quote_id">
+          <input type="hidden" id="controller_name">
+  <div class="modal-body">
+   <p> Hisabing ERP Solutions Pvt Ltd is firmly committed to protecting the privacy and confidentiality of the personal and business related information of all users (hereinafter referred to as ‘Sensitive commercial information’) who visit <a href="https://www.hisabing.com/" target="_blank">www.hisabing.com</a> and make use of its services. We value your privacy and for this purpose, provide this policy which explains how we protect and use you information in a safe manner.</p>
+   <p>For any queries or concerns regarding this Privacy Policy, users may contact the User Support at <a href="mailto:hisabing@siamcomputing.com" target="_blank">hisabing@siamcomputing.com</a></p>
+    <h3>1. INFORMATION WE COLLECT FROM YOU</h3>
+    <p>When the user registers for the service on www.hisabing.com, Hisabing ERP Solutions Pvt Ltd collects personal information from the user such as the user’s full name, e-mail address and phone number as well as the name of the user’s business/company. This information is used for: identifying and authenticating the user while accessing the service; providing the service effectively; contacting the user for service related needs; to fix errors with the application, to improve the performance of the application and for analytical purposes.</p>
+    <p>Sensitive commercial information made available by the user, specifically required for the performance of the service, including but not limited to quotes, client details and pricing shall not view/use this information unless mandatorily required by law or for the sole purpose of improving the service. Service rendered on the basis of this sensitive commercial information is automatically generated and does not require disclosure to anyone whatsoever</p>
+    <h3>2. CHANGES/MODIFICATIONS</h3>
+    <p>Hisabing ERP Solutions Pvt Ltd reserves the right to periodically update or make changes to this Policy.  Hence, you are requested to check our Terms of Service and Privacy Policy regularly for such updates. The user’s continued use of the service after such changes have been made shall be considered to be the acceptance of such changes.</p>
+    <h3>3. HOW WE USE YOUR INFORMATION</h3>
+<p>Hisabing ERP Solutions Pvt Ltd uses the personal information provided by the user only for the performance and improvement of quality of the service. The user’s personal information shall not be shared with any third-parties under any circumstances, except as mentioned in this Policy.</p>
+<p>Hisabing ERP Solutions Pvt Ltd shall use aggregate information from users for analytical purposes in order to share trends and insights with other users relating to their respective businesses.</p> 
+<h3>4. DISCLOSURE OF YOUR INFORMATION</h3>
+<p>Hisabing ERP Solutions Pvt Ltd may disclose the personal information we have collected from you under the following circumstances:</p>
+<ol>
+    <li>If we are required to do so under any law or in order to comply with an order of a court; or</li>
+    <li> If the terms of service of www.hisabing .com have been violated by the user; or</li>
+    <li> To co-operate with any investigation or inquiry relating to any illegal activity; or</li>
+    <li> If the user consents to such disclosure.</li>
+</ol>
+<p>However, sensitive commercial information made by available by the user in order to avail the service shall not be disclosed to anyone under any circumstances. Hisabing ERP Solutions Pvt Ltd shall not view/use this information unless mandatorily required by law or for the sole purpose of improving the service.</p>
+<h3>5. COOKIES</h3>
+<p>Hisabing ERP Solutions Pvt Ltd uses ‘cookies’ on www.hisabing.com which enable the provision of customized services to the user. This enhances your browsing experience on the website.</p>
+<h3>6. STORAGE OF DATA</h3>
+<p>All the information collected from the user through www.hisabing.com for the performance of the service is stored in Hisabing ERP Solutions Pvt Ltd’s virtual private server. </p>
+
+  <div class="modal-footer">    
+  </div>
+    </div>
+  </div>
+</div>
+    </body>
+</html>
